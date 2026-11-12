@@ -1,0 +1,1075 @@
+{
+  "photos": [
+    {
+      "slug": "shooting-range",
+      "raw": "assets-src/raw/shooting-range.jpg",
+      "crop": [
+        0.1,
+        0.06,
+        0.88,
+        0.7425
+      ],
+      "alt": "Over-the-shoulder view of a shooter at an indoor range aiming a snub-nosed revolver down a white-walled lane toward a paper target.",
+      "subject": "Shooter's revolver aimed downrange in an indoor range lane",
+      "focal": [
+        0.5,
+        0.55
+      ],
+      "quiet": [
+        "left",
+        "bottom"
+      ],
+      "people": "non-identifiable",
+      "tags": [
+        "modern",
+        "indoor",
+        "shooting-range",
+        "firearm",
+        "sport",
+        "lanes"
+      ],
+      "credit": {
+        "author": "Noah Wulf",
+        "source": "Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File:Man_Aiming_Snub_Nosed_Revolver_at_The_Range_702.jpg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "rois": [
+        {
+          "key": "firearm-muzzle",
+          "kind": "thermal",
+          "subject": "The shooter's revolver and its muzzle direction",
+          "suggestion": "Muzzle leaves the safe downrange direction",
+          "box": [
+            0.355,
+            0.48,
+            0.2,
+            0.25
+          ],
+          "hot": [
+            0.6,
+            0.44
+          ],
+          "spread": [
+            0.28,
+            0.28
+          ],
+          "lum": -1,
+          "shape": "ellipse",
+          "thermal": {
+            "coreLum": 0.85
+          }
+        }
+      ],
+      "notes": "Man Aiming Snub Nosed Revolver at The Range 702 · taken 5 January 2020, The Range 702, Las Vegas · target brand mark out of focus (illegible), no retouch needed"
+    },
+    {
+      "slug": "ride-zones",
+      "raw": "assets-src/raw/ride-zones.jpg",
+      "crop": [
+        0.114,
+        0.065,
+        0.835,
+        0.835
+      ],
+      "alt": "An illuminated carousel at night ringed by a low metal safety fence with a gate at the front, the strip of platform just inside the fence empty.",
+      "subject": "Lit carousel at night inside its fenced, gated safety zone",
+      "focal": [
+        0.49,
+        0.62
+      ],
+      "quiet": [
+        "top"
+      ],
+      "people": "none",
+      "tags": [
+        "modern",
+        "night",
+        "amusement-park",
+        "carousel",
+        "fence",
+        "gate",
+        "safety-zone"
+      ],
+      "credit": {
+        "author": "掬茶 (Kikucha)",
+        "source": "Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File:Carousel_of_Omoriyama_Amusement_Park_in_the_night.jpg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "rois": [
+        {
+          "key": "inside-gate-zone",
+          "kind": "thermal",
+          "subject": "Strip of ride platform just inside the safety fence and gate",
+          "suggestion": "Visitor inside the fenced ride zone while the ride is running",
+          "box": [
+            0.25,
+            0.7,
+            0.46,
+            0.22
+          ],
+          "hot": [
+            0.4,
+            0.52
+          ],
+          "spread": [
+            0.5,
+            0.42
+          ],
+          "lum": 0.25,
+          "shape": "ellipse"
+        }
+      ],
+      "notes": "Carousel of Omoriyama Amusement Park in the night · taken 29 July 2023, Omoriyama Amusement Park (AniPa), Akita · cropped to exclude visitors at the left edge"
+    },
+    {
+      "slug": "trampoline-parks",
+      "raw": "assets-src/raw/trampoline-parks.jpg",
+      "crop": [
+        0.02,
+        0.04,
+        0.93,
+        0.93
+      ],
+      "alt": "An empty indoor trampoline arena under dark ceiling rigging: rows of black trampoline beds framed by bright padded edges, with angled wall trampolines at the back.",
+      "subject": "Empty indoor trampoline arena with padded frames between the beds",
+      "focal": [
+        0.45,
+        0.62
+      ],
+      "quiet": [
+        "top"
+      ],
+      "people": "none",
+      "tags": [
+        "modern",
+        "indoor",
+        "trampoline-park",
+        "leisure",
+        "empty",
+        "safety-zone"
+      ],
+      "credit": {
+        "author": "Timothee100",
+        "source": "Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File:Superfly_Dortmund_Trampolinpark.jpg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "rois": [
+        {
+          "key": "pad-between-beds",
+          "kind": "thermal",
+          "subject": "Padded frame and gap between two trampoline beds",
+          "suggestion": "Jumper landing on the frame pad between beds",
+          "box": [
+            0.12,
+            0.71,
+            0.26,
+            0.2
+          ],
+          "hot": [
+            0.5,
+            0.5
+          ],
+          "spread": [
+            0.42,
+            0.42
+          ],
+          "lum": 0.8,
+          "shape": "ellipse"
+        }
+      ],
+      "retouch": [
+        [
+          0.376,
+          0.32,
+          0.044,
+          0.118
+        ],
+        [
+          0.9,
+          0.255,
+          0.1,
+          0.14
+        ]
+      ],
+      "notes": "Superfly Dortmund Trampolinpark (main court) · taken 12 October 2016, Dortmund, Germany (Sony α7S) · venue logos on the back wall blurred"
+    },
+    {
+      "slug": "fall-detection",
+      "raw": "assets-src/raw/fall-detection.jpg",
+      "crop": [
+        0,
+        0.2,
+        1,
+        0.75
+      ],
+      "alt": "An empty, quietly lit care-ward corridor at night with wooden handrails along both walls and a long run of clear floor.",
+      "subject": "Empty care corridor with handrails at night",
+      "focal": [
+        0.55,
+        0.6
+      ],
+      "quiet": [
+        "top",
+        "left"
+      ],
+      "people": "none",
+      "tags": [
+        "modern",
+        "indoor",
+        "night",
+        "care",
+        "corridor",
+        "handrail",
+        "elderly-care",
+        "healthcare"
+      ],
+      "credit": {
+        "author": "Famartin",
+        "source": "Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File:2023-01-28_20_31_04_A_corridor_within_the_labor_recovery_ward_at_Capital_Health_Medical_Center_-_Hopewell_in_Hopewell_Township,_Mercer_County,_New_Jersey.jpg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "rois": [
+        {
+          "key": "corridor-floor",
+          "kind": "thermal",
+          "subject": "Open stretch of corridor floor between the handrails",
+          "suggestion": "Person down on the corridor floor",
+          "box": [
+            0.34,
+            0.54,
+            0.48,
+            0.34
+          ],
+          "hot": [
+            0.5,
+            0.62
+          ],
+          "spread": [
+            0.75,
+            0.8
+          ],
+          "lum": 0.4,
+          "shape": [
+            [
+              0.233,
+              0.137
+            ],
+            [
+              0.667,
+              0.137
+            ],
+            [
+              0.927,
+              0.961
+            ],
+            [
+              0.073,
+              0.961
+            ]
+          ],
+          "thermal": {
+            "feather": 0.16,
+            "kD": 0.62,
+            "offset": 0.18
+          }
+        }
+      ],
+      "notes": "2023-01-28 20 31 04 A corridor within the labor recovery ward at Capital Health Medical Center - Hopewell · taken 28 January 2023, 20:31, Hopewell Township, New Jersey (iPhone X)"
+    },
+    {
+      "slug": "pool-night",
+      "raw": "assets-src/raw/pool-night.jpg",
+      "crop": [
+        0.06,
+        0.258,
+        0.88,
+        0.742
+      ],
+      "alt": "A resort swimming pool at night, its still, lit water reflecting a white colonnade and empty sun loungers under a dark, cloudy sky.",
+      "subject": "Empty lit resort pool at night",
+      "focal": [
+        0.5,
+        0.72
+      ],
+      "quiet": [
+        "top"
+      ],
+      "people": "none",
+      "tags": [
+        "modern",
+        "night",
+        "swimming-pool",
+        "hotel",
+        "resort",
+        "water",
+        "empty"
+      ],
+      "credit": {
+        "author": "René Bongard",
+        "source": "Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File:Swimming_pool_Livingstone_by_night_-_panoramio.jpg",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/"
+      },
+      "rois": [
+        {
+          "key": "deep-end-water",
+          "kind": "thermal",
+          "subject": "Water surface at the deep end of the pool",
+          "suggestion": "Swimmer motionless in the deep end after hours",
+          "box": [
+            0.29,
+            0.815,
+            0.42,
+            0.185
+          ],
+          "hot": [
+            0.5,
+            0.5
+          ],
+          "spread": [
+            0.36,
+            0.55
+          ],
+          "lum": 0.65,
+          "shape": "ellipse"
+        }
+      ],
+      "notes": "Swimming pool Livingstone by night · taken 15 April 2012, 21:53, Livingstone Jan Thiel resort, Curaçao (Samsung NX200) · via Panoramio"
+    },
+    {
+      "slug": "marinas",
+      "raw": "assets-src/raw/marinas.jpg",
+      "crop": [
+        0,
+        0.08,
+        1,
+        0.8775
+      ],
+      "alt": "A Baltic Sea marina at golden hour: rows of moored motor yachts and sailing boats line a mirror-still channel that reflects their masts.",
+      "subject": "Marina channel between moored boats at golden hour",
+      "focal": [
+        0.42,
+        0.62
+      ],
+      "quiet": [
+        "top"
+      ],
+      "people": "none",
+      "tags": [
+        "modern",
+        "dusk",
+        "golden-hour",
+        "marina",
+        "harbour",
+        "boats",
+        "water",
+        "europe"
+      ],
+      "credit": {
+        "author": "Dietmar Rabich",
+        "source": "Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File:K%C3%BChlungsborn,_Marina_--_2024_--_4933.jpg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "rois": [
+        {
+          "key": "water-between-boats",
+          "kind": "thermal",
+          "subject": "Open water just off the bows of the moored boats",
+          "suggestion": "Person in the water between the boats",
+          "box": [
+            0.29,
+            0.585,
+            0.22,
+            0.17
+          ],
+          "hot": [
+            0.48,
+            0.45
+          ],
+          "spread": [
+            0.36,
+            0.36
+          ],
+          "lum": -0.5,
+          "shape": "ellipse"
+        }
+      ],
+      "retouch": [
+        [
+          0.955,
+          0.5698,
+          0.045,
+          0.0684
+        ],
+        [
+          0.03,
+          0.6211,
+          0.07,
+          0.0513
+        ]
+      ],
+      "notes": "Kühlungsborn, Marina -- 2024 -- 4933 · taken 29 July 2024, 20:45, Kühlungsborn, Mecklenburg-Vorpommern, Germany (Canon EOS 5D Mark IV) · Commons Quality Image · boat names blurred"
+    },
+    {
+      "slug": "ferry-docks",
+      "raw": "assets-src/raw/ferry-docks.jpg",
+      "crop": [
+        0,
+        0.12,
+        1,
+        0.75
+      ],
+      "alt": "An empty car-ferry ramp on a Norwegian fjord quay, its yellow barrier arm raised, leading under the open bow visor of a docked electric ferry.",
+      "subject": "Car-ferry ramp and quay edge under an open bow visor",
+      "focal": [
+        0.62,
+        0.6
+      ],
+      "quiet": [
+        "top",
+        "left"
+      ],
+      "people": "none",
+      "tags": [
+        "modern",
+        "ferry",
+        "quay",
+        "ramp",
+        "norway",
+        "nordic",
+        "maritime",
+        "transport"
+      ],
+      "credit": {
+        "author": "Wolfmann",
+        "source": "Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File:ED%C3%98YFJORD_Fergesamband_Ferry_route_Fv_699_SANDVIKA_ferjekai_(dock_terminal)_Tustna_NORWAY_MF_Sm%C3%B8la_M%C3%B8ringen_elektriske_bilferger_pendelferger_(electric_double-ended_car_ferries_built_2012)_etc_2024-09-10_IMG_9169.jpg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "rois": [
+        {
+          "key": "ramp-edge",
+          "kind": "thermal",
+          "subject": "Ferry ramp where it meets the car deck and the quay edge",
+          "suggestion": "Person on the ramp while the ferry is berthing",
+          "box": [
+            0.57,
+            0.52,
+            0.26,
+            0.2
+          ],
+          "hot": [
+            0.5,
+            0.48
+          ],
+          "spread": [
+            0.4,
+            0.4
+          ],
+          "lum": 0.25,
+          "shape": "ellipse"
+        }
+      ],
+      "retouch": [
+        [
+          0.626,
+          0.0133,
+          0.05,
+          0.0667
+        ],
+        [
+          0.494,
+          0.305,
+          0.056,
+          0.085
+        ],
+        [
+          0.672,
+          0.364,
+          0.082,
+          0.034
+        ],
+        [
+          0.343,
+          0.4307,
+          0.028,
+          0.0293
+        ],
+        [
+          0.608,
+          0.378,
+          0.062,
+          0.024
+        ],
+        [
+          0.78,
+          0.377,
+          0.036,
+          0.026
+        ],
+        [
+          0.609,
+          0.282,
+          0.024,
+          0.023
+        ]
+      ],
+      "notes": "EDØYFJORD Fergesamband … SANDVIKA ferjekai … MF Smøla, Møringen … 2024-09-10 IMG 9169 · taken 10 September 2024, Sandvika ferry quay, Tustna, Møre og Romsdal, Norway · vessel names, IMO number and operator logos blurred"
+    },
+    {
+      "slug": "livestock-barns",
+      "raw": "assets-src/raw/livestock-barns.jpg",
+      "crop": [
+        0.06,
+        0.08,
+        0.94,
+        0.796
+      ],
+      "alt": "Inside a long broiler house: thousands of white chickens on litter between feeder and drinker lines that run toward the ventilation fans at the far end.",
+      "subject": "Broiler flock on the floor of a poultry house",
+      "focal": [
+        0.5,
+        0.55
+      ],
+      "quiet": [
+        "top"
+      ],
+      "people": "none",
+      "tags": [
+        "modern",
+        "agriculture",
+        "livestock",
+        "poultry",
+        "broilers",
+        "barn",
+        "indoor",
+        "animal-welfare"
+      ],
+      "credit": {
+        "author": "U.S. Department of Agriculture — Bob Nichols",
+        "source": "Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File:20130822-OC-RBN-2946_(9682285758).jpg",
+        "license": "Public domain (U.S. Department of Agriculture work)",
+        "licenseUrl": "https://commons.wikimedia.org/wiki/Template:PD-USGov-USDA"
+      },
+      "rois": [
+        {
+          "key": "flock-spot",
+          "kind": "thermal",
+          "subject": "One bird in the middle of the flock",
+          "suggestion": "Bird not moving with the flock (possible lameness or illness)",
+          "box": [
+            0.4309,
+            0.5025,
+            0.1383,
+            0.201
+          ],
+          "hot": [
+            0.5,
+            0.5
+          ],
+          "spread": [
+            0.42,
+            0.42
+          ],
+          "lum": 0.8,
+          "shape": "ellipse"
+        }
+      ],
+      "notes": "20130822-OC-RBN-2946 (Broiler chickens in a chicken house on the Bobby Morgan chicken farm, Luling, Texas) · taken 22 August 2013 (Nikon D300) · USDA photo by Bob Nichols · cropped to remove an out-of-focus bystander at the left edge"
+    },
+    {
+      "slug": "predator-watch",
+      "raw": "assets-src/raw/predator-watch.jpg",
+      "crop": [
+        0,
+        0,
+        1,
+        0.84375
+      ],
+      "alt": "A large flock of sheep grazing heads-down in a lush meadow that ends at the edge of a dense conifer forest.",
+      "subject": "Sheep flock grazing at the forest edge",
+      "focal": [
+        0.5,
+        0.45
+      ],
+      "quiet": [
+        "bottom"
+      ],
+      "people": "none",
+      "tags": [
+        "modern",
+        "agriculture",
+        "livestock",
+        "sheep",
+        "pasture",
+        "forest-edge",
+        "outdoor",
+        "predator"
+      ],
+      "credit": {
+        "author": "U.S. Forest Service, Intermountain Region — Cody Allred",
+        "source": "Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File:2020612-FS-Payette-CLA-004_(50062671462).jpg",
+        "license": "Public domain (U.S. Forest Service work)",
+        "licenseUrl": "https://commons.wikimedia.org/wiki/Template:PD-USGov-USDA-FS"
+      },
+      "rois": [
+        {
+          "key": "forest-edge",
+          "kind": "thermal",
+          "subject": "Dark tree line at the forest edge behind the flock",
+          "suggestion": "Large animal approaching from the tree line",
+          "box": [
+            0.63,
+            0.12,
+            0.26,
+            0.22
+          ],
+          "hot": [
+            0.5,
+            0.68
+          ],
+          "spread": [
+            0.34,
+            0.36
+          ],
+          "lum": 0.55,
+          "shape": "ellipse"
+        }
+      ],
+      "notes": "2020612-FS-Payette-CLA-004 (Domestic sheep released in Price Valley, New Meadows Ranger District, Payette National Forest, Idaho) · taken 12 June 2020 (Nikon D3100) · Forest Service photo by Cody Allred"
+    },
+    {
+      "slug": "predator-animal",
+      "raw": "assets-src/raw/predator-animal.jpg",
+      "crop": [
+        0,
+        0.1,
+        1,
+        0.84375
+      ],
+      "alt": "A Eurasian lynx crouched in forest undergrowth among brambles and fallen leaves, looking straight at the camera.",
+      "subject": "Eurasian lynx in forest undergrowth",
+      "focal": [
+        0.48,
+        0.5
+      ],
+      "quiet": [
+        "top",
+        "right"
+      ],
+      "people": "none",
+      "tags": [
+        "modern",
+        "wildlife",
+        "predator",
+        "lynx",
+        "forest",
+        "europe",
+        "nordic"
+      ],
+      "credit": {
+        "author": "JakobRei",
+        "source": "Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File:Luchs_im_Nationalpark_Bayerischer_Wald_7.jpg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "rois": [
+        {
+          "key": "lynx",
+          "kind": "thermal",
+          "subject": "Eurasian lynx crouching in the undergrowth",
+          "suggestion": "Large predator detected near the grazing area",
+          "box": [
+            0.03,
+            0.2726,
+            0.6,
+            0.6519
+          ],
+          "hot": [
+            [
+              0.842,
+              0.309,
+              1
+            ],
+            [
+              0.417,
+              0.636,
+              0.8
+            ]
+          ],
+          "spread": [
+            0.34,
+            0.42
+          ],
+          "lum": 0.5,
+          "shape": [
+            [
+              0.731,
+              0.049
+            ],
+            [
+              0.725,
+              0.167
+            ],
+            [
+              0.817,
+              0.13
+            ],
+            [
+              0.943,
+              0.079
+            ],
+            [
+              0.952,
+              0.167
+            ],
+            [
+              0.934,
+              0.301
+            ],
+            [
+              0.921,
+              0.419
+            ],
+            [
+              0.893,
+              0.478
+            ],
+            [
+              0.808,
+              0.522
+            ],
+            [
+              0.763,
+              0.641
+            ],
+            [
+              0.69,
+              0.703
+            ],
+            [
+              0.614,
+              0.703
+            ],
+            [
+              0.573,
+              0.712
+            ],
+            [
+              0.505,
+              0.718
+            ],
+            [
+              0.492,
+              0.774
+            ],
+            [
+              0.49,
+              0.84
+            ],
+            [
+              0.456,
+              0.892
+            ],
+            [
+              0.338,
+              0.951
+            ],
+            [
+              0.221,
+              0.966
+            ],
+            [
+              0.067,
+              0.951
+            ],
+            [
+              0.031,
+              0.848
+            ],
+            [
+              0.104,
+              0.744
+            ],
+            [
+              0.221,
+              0.611
+            ],
+            [
+              0.356,
+              0.508
+            ],
+            [
+              0.492,
+              0.389
+            ],
+            [
+              0.6,
+              0.315
+            ],
+            [
+              0.672,
+              0.263
+            ],
+            [
+              0.717,
+              0.204
+            ]
+          ],
+          "thermal": {
+            "feather": 0.07
+          }
+        }
+      ],
+      "notes": "Luchs im Nationalpark Bayerischer Wald 7 · taken 29 March 2018, Lusen National Park Centre animal enclosure, Bavarian Forest National Park, Germany · Commons Quality Image, Wiki Loves Earth 2018 winner"
+    },
+    {
+      "slug": "construction-safety",
+      "raw": "assets-src/raw/construction-safety.jpg",
+      "crop": [
+        0.02,
+        0.15,
+        0.96,
+        0.81
+      ],
+      "alt": "Night work on a beach-replenishment site: two crew members in hard hats and high-visibility vests stand on the sand a few metres from a floodlit excavator dumping a bucket of wet sand.",
+      "subject": "Hi-vis crew standing inside a working excavator's reach at night",
+      "focal": [
+        0.42,
+        0.6
+      ],
+      "quiet": [
+        "top",
+        "left"
+      ],
+      "people": "non-identifiable",
+      "tags": [
+        "modern",
+        "night",
+        "construction",
+        "excavator",
+        "workers",
+        "hi-vis",
+        "heavy-machinery",
+        "outdoor"
+      ],
+      "credit": {
+        "author": "Szeremeta",
+        "source": "Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File:Bay_Head_Beach_Replenishment_at_Night,_Crew_and_Excavator.jpg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "rois": [
+        {
+          "key": "worker-in-swing-radius",
+          "kind": "thermal",
+          "subject": "Two crew members standing within the excavator's working radius",
+          "suggestion": "Person inside the machine's swing zone while it is operating",
+          "box": [
+            0.045,
+            0.62,
+            0.175,
+            0.38
+          ],
+          "hot": [
+            [
+              0.308,
+              0.399,
+              1
+            ],
+            [
+              0.636,
+              0.448,
+              1
+            ]
+          ],
+          "spread": [
+            0.2,
+            0.32
+          ],
+          "lum": 0.5,
+          "shape": [
+            [
+              0.267,
+              0.246
+            ],
+            [
+              0.29,
+              0.211
+            ],
+            [
+              0.374,
+              0.207
+            ],
+            [
+              0.398,
+              0.25
+            ],
+            [
+              0.374,
+              0.301
+            ],
+            [
+              0.386,
+              0.344
+            ],
+            [
+              0.404,
+              0.431
+            ],
+            [
+              0.487,
+              0.438
+            ],
+            [
+              0.517,
+              0.438
+            ],
+            [
+              0.517,
+              0.389
+            ],
+            [
+              0.57,
+              0.357
+            ],
+            [
+              0.582,
+              0.301
+            ],
+            [
+              0.594,
+              0.263
+            ],
+            [
+              0.665,
+              0.263
+            ],
+            [
+              0.683,
+              0.301
+            ],
+            [
+              0.671,
+              0.35
+            ],
+            [
+              0.731,
+              0.376
+            ],
+            [
+              0.755,
+              0.48
+            ],
+            [
+              0.767,
+              0.539
+            ],
+            [
+              0.695,
+              0.561
+            ],
+            [
+              0.683,
+              0.766
+            ],
+            [
+              0.558,
+              0.773
+            ],
+            [
+              0.546,
+              0.578
+            ],
+            [
+              0.523,
+              0.487
+            ],
+            [
+              0.493,
+              0.483
+            ],
+            [
+              0.404,
+              0.49
+            ],
+            [
+              0.38,
+              0.519
+            ],
+            [
+              0.374,
+              0.782
+            ],
+            [
+              0.267,
+              0.789
+            ],
+            [
+              0.267,
+              0.519
+            ],
+            [
+              0.225,
+              0.506
+            ],
+            [
+              0.225,
+              0.35
+            ],
+            [
+              0.255,
+              0.301
+            ]
+          ],
+          "thermal": {
+            "feather": 0.07
+          }
+        }
+      ],
+      "retouch": [
+        [
+          0.6615,
+          0.3272,
+          0.05,
+          0.1074
+        ],
+        [
+          0.835,
+          0.728,
+          0.03,
+          0.035
+        ],
+        [
+          0.87,
+          0.702,
+          0.034,
+          0.046
+        ],
+        [
+          0.837,
+          0.77,
+          0.022,
+          0.017
+        ]
+      ],
+      "notes": "Bay Head Beach Replenishment at Night, Crew and Excavator · taken 4 July 2025, Bay Head, New Jersey (Nikon Z 7II) · CAT and contractor logos blurred"
+    }
+  ]
+}

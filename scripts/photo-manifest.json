@@ -1,0 +1,96 @@
+{
+  "$comment": "Source of truth for the Enlight Layer image pipeline. Edit, then run `npm run photos`. crop and drawing.erase = [x,y,w,h] fractions of the RAW file; ROI boxes and retouch = fractions of the PROCESSED image. Thermal ROI options: hot [hx,hy] or [[hx,hy,weight],…] (box fractions), spread [sx,sy] (core radii, box fractions), angle (deg), lum (1 bright=hot, -1 dark=hot, 0..1 = less texture-driven), shape ('ellipse' or polygon [[x,y],…] in box fractions), thermal {…} per-ROI overrides. Photo entries live in scripts/photos/*.json.",
+  "defaults": {
+    "maxEdge": 2048,
+    "heroMaxEdge": 2560,
+    "quality": 84,
+    "minQuality": 66,
+    "heroMaxKB": 760,
+    "maxKB": 480,
+    "grain": 1.0,
+    "grainMax": 1.2,
+    "black": "#0a0a0a",
+    "white": "#f4f4f4",
+    "ink": "#151515",
+    "adjust": {
+      "levels": [
+        0.3,
+        99.7
+      ],
+      "gamma": 1,
+      "contrast": 0.42,
+      "brightness": 0,
+      "clarity": 0.3,
+      "clarityRadius": 0.016,
+      "structure": 0.2,
+      "structureRadius": 0.0025,
+      "sharpen": 0.35,
+      "sharpenRadius": 1,
+      "restretch": [
+        0.12,
+        99.88
+      ]
+    }
+  },
+  "thermal": {
+    "$comment": "Ironbow overlay. heat = kL·Ln + kD·core − offset, soft-kneed above `knee` (tanh) and clamped, Ln = box luminance stretched to its own 2nd–98th percentile (texture-following), core = (1 − smoothstep(0,1,d))^dExp with d = elliptical distance from `hot` normalised by `spread`. rgb = ironbow(heat)·(1 + detail·highpass) so ribs / bolts / edges read through the colour. alpha = alphaMax · edge feather (feather × box size) · (alphaFloor + (1 − alphaFloor)·smoothstep(0, alphaKnee, heat)). Run 3: alphaFloor 0 + wide feather so only the warm parts of the object are coloured and the region never reads as a box.",
+    "kL": 0.5,
+    "kD": 0.72,
+    "offset": 0.15,
+    "knee": 0.8,
+    "dExp": 0.8,
+    "spread": [
+      0.55,
+      0.55
+    ],
+    "feather": 0.2,
+    "alphaMax": 0.92,
+    "alphaFloor": 0.0,
+    "alphaKnee": 0.5,
+    "blur": 0.002,
+    "detail": 0.35,
+    "detailRadius": 0.02,
+    "maxEdge": 1100,
+    "quality": 82,
+    "alphaQuality": 90,
+    "stops": [
+      [
+        0,
+        "#120a2e"
+      ],
+      [
+        0.15,
+        "#3a1173"
+      ],
+      [
+        0.32,
+        "#6e2bb0"
+      ],
+      [
+        0.48,
+        "#a63aa8"
+      ],
+      [
+        0.6,
+        "#d84a8c"
+      ],
+      [
+        0.72,
+        "#ff5a3c"
+      ],
+      [
+        0.82,
+        "#ff8a1e"
+      ],
+      [
+        0.92,
+        "#ffc04a"
+      ],
+      [
+        1,
+        "#fff1c4"
+      ]
+    ]
+  },
+  "photos": []
+}

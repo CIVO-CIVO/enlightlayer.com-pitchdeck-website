@@ -1,0 +1,19 @@
+node_modules/
+.next/
+.next-build/
+out/
+.vercel
+*.tsbuildinfo
+next-env.d.ts
+.DS_Store
+.env*
+assets-src/raw/*.jpg
+assets-src/raw/*.jpeg
+assets-src/raw/*.png
+assets-src/raw/*.tif
+assets-src/raw/*.tiff
+assets-src/raw/*.webp
+assets-src/candidates/
+qa/
+# internal working notes (the owner's raw service list, claims to confirm) stay local — this repo is public
+docs/
