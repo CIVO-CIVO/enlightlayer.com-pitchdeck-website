@@ -590,7 +590,7 @@ ${list.map(row).join("\n")}
 ## Licensing
 
 - **Public domain** — U.S. federal government works (17 U.S.C. § 105), works whose authors released them to the public domain, and **CC0 1.0** dedications. No attribution is legally required; we credit them anyway.
-- **CC BY / CC BY-SA** — used with the attribution the licence requires (author, source link, licence link) on \`/credits\`. Our processed versions (crop, grayscale tone-mapping, infrared overlay) are adaptations; adaptations of CC BY-SA photographs are shared under the same licence.
+- **CC BY / CC BY-SA** — used with the attribution the license requires (author, source link, license link) on \`/credits\`. Our processed versions (crop, grayscale tone-mapping, infrared overlay) are adaptations; adaptations of CC BY-SA photographs are shared under the same license.
 - No NC, ND or "all rights reserved" images are used.
 - **Processing:** every photograph is cropped, converted to neutral grayscale, tone-mapped and given a barely visible grain. Faces, plates, brand names and lettering that were legible are blurred (\`retouch\` in the manifest), cropped, or — in one case (\`inspection-proof\`, an agency name on a vest) — painted out in the raw file; the untouched download is kept beside it. The infrared overlays (\`public/img/ir/*.webp\`) are **illustrative graphics computed from the photograph's own luminance — not sensor data or real temperature measurements.**
 - The photographs show real places that have nothing to do with Enlight Layer. They illustrate monitoring *concepts* and must never be presented as deployments, customers or partner sites. Government photographs do not imply endorsement by that agency.

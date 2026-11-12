@@ -44,7 +44,7 @@ export function Scene({
   }
   const roi = p.rois.find((r) => r.kind === "thermal") ?? p.rois[0];
   const box = roi?.box;
-  // Cover-crop around the focus object: with object-position = the box centre, that centre stays
+  // Cover-crop around the focus object: with object-position = the box center, that center stays
   // inside the frame at every aspect ratio, so the infrared and the alert are never cropped away.
   const [fx, fy] = box ? [box[0] + box[2] / 2, box[1] + box[3] / 2] : p.focal;
   const style = { "--ar": (p.width / p.height).toFixed(5), "--fx": fx.toFixed(4), "--fy": fy.toFixed(4) } as CSSProperties;
