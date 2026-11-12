@@ -191,11 +191,11 @@ export function Stack({ slug, sensors, alert, dark }: { slug: string; sensors: S
               width={box[2] * 150}
               height={box[3] * 100}
               rx=".6"
-              fill="rgba(255,138,30,.06)"
-              stroke="#ff8a1e"
+              fill="rgba(207,70,34,.06)"
+              stroke="#cf4622"
               strokeWidth=".55"
             />
-            <circle cx={u * 150} cy={v * 100} r="1.1" fill="#ff8a1e" />
+            <circle cx={u * 150} cy={v * 100} r="1.1" fill="#cf4622" />
           </svg>
         </div>
 
@@ -221,7 +221,7 @@ export function Stack({ slug, sensors, alert, dark }: { slug: string; sensors: S
         {/* the alert */}
         <div data-plane="3" className="pointer-events-none absolute inset-0 z-[30]">
           <svg viewBox={`0 0 100 ${G.h}`} className="absolute inset-0 h-full w-full" aria-hidden>
-            <polyline points={`${ax},${ay} ${cardX},${cardBottom}`} fill="none" stroke="#ff8a1e" strokeWidth=".2" />
+            <polyline points={`${ax},${ay} ${cardX},${cardBottom}`} fill="none" stroke="#cf4622" strokeWidth=".2" />
           </svg>
           <div
             className="absolute rounded-[8px] border border-orange/60 bg-[#141413]/95 px-[1.5cqw] py-[1.3cqw] text-white shadow-[0_18px_40px_-18px_rgba(0,0,0,.7)]"
