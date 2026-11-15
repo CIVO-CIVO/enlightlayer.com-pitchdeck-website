@@ -61,8 +61,8 @@ export function Cover({ n }: { n: number }) {
 }
 
 /* ── 02 · Problem: a wall of feeds, one problem in progress ──────────────── */
-const WALL = ["substations", "garage-flood", "robot-cells", "marinas", "pump-stations", "rental-yards", "waste-fire", "ferry-docks", "livestock-barns"];
-const WALL_HOT = 4;
+const WALL = ["cover-b", "garage-flood", "robot-cells", "marinas", "pump-stations", "rental-yards", "waste-fire", "ferry-docks", "livestock-barns"];
+const WALL_HOT = [0, 2, 4, 6];
 
 export function Problem({ n }: { n: number }) {
   return (
@@ -100,16 +100,16 @@ export function Problem({ n }: { n: number }) {
                 key={slug}
                 slug={slug}
                 label={`CAM ${pad(k + 1)}`}
-                infrared={k === WALL_HOT}
-                brackets={k === WALL_HOT}
+                infrared={WALL_HOT.includes(k)}
+                brackets={WALL_HOT.includes(k)}
                 sizes="(min-width: 1024px) 18vw, 32vw"
-                className={cx("aspect-[16/10] rounded-[6px]", k !== WALL_HOT && "opacity-90")}
+                className={cx("aspect-[16/10] rounded-[6px]", !WALL_HOT.includes(k) && "opacity-90")}
               />
             ))}
           </div>
           <figcaption className="muted mt-3 flex items-center gap-2 text-[13px]">
             <span className="h-1.5 w-1.5 rounded-full bg-orange" aria-hidden />
-            Nine feeds. One problem in progress — and nobody looking at CAM {pad(WALL_HOT + 1)}.
+            Nine feeds. Four problems in progress — and nobody looking.
           </figcaption>
         </figure>
       </div>
