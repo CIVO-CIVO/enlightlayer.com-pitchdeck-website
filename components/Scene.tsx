@@ -21,6 +21,7 @@ export function Scene({
   infrared = true,
   sizes = "(min-width: 1024px) 60vw, 100vw",
   shade,
+  mirror,
 }: {
   slug: string;
   card?: SceneCard;
@@ -33,6 +34,8 @@ export function Scene({
   sizes?: string;
   /** a gradient painted between the photograph and the card */
   shade?: string;
+  /** show the photograph mirrored left to right (infrared, brackets and card follow) */
+  mirror?: boolean;
 }) {
   const p = getPhoto(slug);
   if (!p) {
@@ -43,10 +46,11 @@ export function Scene({
     );
   }
   const roi = p.rois.find((r) => r.kind === "thermal") ?? p.rois[0];
-  const box = roi?.box;
+  const box = roi && mirror ? ([1 - roi.box[0] - roi.box[2], roi.box[1], roi.box[2], roi.box[3]] as const) : roi?.box;
+  const flip = mirror ? { transform: "scaleX(-1)" } : undefined;
   // Cover-crop around the focus object: with object-position = the box center, that center stays
   // inside the frame at every aspect ratio, so the infrared and the alert are never cropped away.
-  const [fx, fy] = box ? [box[0] + box[2] / 2, box[1] + box[3] / 2] : p.focal;
+  const [fx, fy] = box ? [box[0] + box[2] / 2, box[1] + box[3] / 2] : mirror ? [1 - p.focal[0], p.focal[1]] : p.focal;
   const style = { "--ar": (p.width / p.height).toFixed(5), "--fx": fx.toFixed(4), "--fy": fy.toFixed(4) } as CSSProperties;
   const side = box && box[0] + box[2] / 2 < 0.56 ? "right" : "left";
   const anchor = box
@@ -68,6 +72,7 @@ export function Scene({
           fetchPriority={eager ? "high" : "auto"}
           decoding="async"
           className="inset-0 h-full w-full"
+          style={flip}
         />
         {infrared && box && roi?.overlay ? (
           // eslint-disable-next-line @next/next/no-img-element
@@ -77,7 +82,7 @@ export function Scene({
             aria-hidden
             loading={eager ? "eager" : "lazy"}
             decoding="async"
-            style={{ left: `${box[0] * 100}%`, top: `${box[1] * 100}%`, width: `${box[2] * 100}%`, height: `${box[3] * 100}%` }}
+            style={{ left: `${box[0] * 100}%`, top: `${box[1] * 100}%`, width: `${box[2] * 100}%`, height: `${box[3] * 100}%`, ...flip }}
           />
         ) : null}
         {brackets && box ? (

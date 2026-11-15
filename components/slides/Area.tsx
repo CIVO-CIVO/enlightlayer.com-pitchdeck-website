@@ -73,6 +73,14 @@ export function Area({ n, group, tone }: { n: number; group: Group; tone: Tone }
                           </span>
                         );
                       })}
+                      {s.options?.map((x) => {
+                        const Icon = SENSE_ICON[x];
+                        return (
+                          <span key={x} className={cx("t-label inline-flex items-center gap-1.5", dark ? "text-white/40" : "text-faint")}>
+                            <Icon className="h-3.5 w-3.5" strokeWidth={1.9} aria-hidden />+ {SENSE_LABEL[x]} (option)
+                          </span>
+                        );
+                      })}
                       {s.note ? <span className={cx("text-[12px] leading-snug", dark ? "text-white/50" : "text-faint")}>{s.note}</span> : null}
                     </p>
                   </div>

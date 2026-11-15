@@ -9,13 +9,13 @@ export type SensorMark = {
   /** position on the plane, 0..1 */
   x: number;
   y: number;
-  kind: "camera" | "thermal" | "vibration" | "gateway";
+  kind: "camera" | "thermal" | "vibration" | "sensor" | "gateway";
   label: string;
   /** field of view on the sensing plane: direction (deg, 0 = right; default: aimed at the focus object), spread (deg), reach (share of plane width) */
   cone?: { angle?: number; spread: number; reach: number };
 };
 
-const SENSOR_ICON = { camera: Camera, thermal: Thermometer, vibration: Radio, gateway: Router } as const;
+const SENSOR_ICON = { camera: Camera, thermal: Thermometer, vibration: Radio, sensor: Radio, gateway: Router } as const;
 
 /** L0 gray, L1 outlined, L2 infrared, L3 solid. */
 export function LayerSwatch({ n, className }: { n: number; className?: string }) {

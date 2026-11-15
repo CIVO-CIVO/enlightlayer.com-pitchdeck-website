@@ -18,6 +18,7 @@ export function Cover({ n }: { n: number }) {
       backdrop={
         <Scene
           slug={COVER.photo}
+          mirror={COVER.mirror}
           card={COVER.card}
           eager
           label={null}
@@ -62,7 +63,7 @@ export function Cover({ n }: { n: number }) {
 
 /* ── 02 · Problem: a wall of feeds, one problem in progress ──────────────── */
 const WALL = ["cover-b", "garage-flood", "robot-cells", "marinas", "pump-stations", "rental-yards", "waste-fire", "ferry-docks", "livestock-barns"];
-const WALL_HOT = [0, 2, 4, 6];
+const WALL_HOT = [1, 3, 5, 7];
 
 export function Problem({ n }: { n: number }) {
   return (
@@ -142,7 +143,7 @@ export function Solution({ n }: { n: number }) {
             alert={SOLUTION.alert}
             sensors={[
               { x: 0.1, y: 0.16, kind: "camera", label: "Existing camera", cone: { spread: 34, reach: 0.62 } },
-              { x: 0.9, y: 0.22, kind: "thermal", label: "Thermal camera", cone: { spread: 26, reach: 0.5 } },
+              { x: 0.62, y: 0.9, kind: "sensor", label: "Water sensor" },
               { x: 0.86, y: 0.84, kind: "gateway", label: "Edge gateway" },
             ]}
           />
