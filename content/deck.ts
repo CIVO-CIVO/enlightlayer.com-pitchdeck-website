@@ -525,8 +525,8 @@ export const COVER = {
   title: "Enlight Layer",
   tagline: "Custom AI monitoring on cameras and sensors — for the places nobody watches.",
   markets: "Europe · North America",
-  photo: "cover",
-  card: { meta: "Boiler hall · 02:14", title: "Heat building at the flue duct" },
+  photo: "cover-c",
+  card: { meta: "Unmanned substation · 02:14", title: "Transformer running hot" },
 };
 
 export const PROBLEM = {

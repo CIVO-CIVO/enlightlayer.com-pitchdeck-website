@@ -690,12 +690,12 @@ export const photos = {
     "alt": "An unmanned substation at night: a floodlit power transformer with its radiators and porcelain bushings stands under dark sky beside a second transformer and the switchyard.",
     "subject": "Floodlit transformers in a rural substation at night",
     "tone": "dark",
-    "focal": [0.4, 0.62],
+    "focal": [0.6, 0.62],
     "quiet": ["top"],
     "rois": [
       {
         "key": "radiator-bank",
-        "box": [0.2002, 0.55017, 0.16992, 0.21972],
+        "box": [0.62988, 0.55017, 0.16992, 0.21972],
         "kind": "thermal",
         "overlay": "/img/ir/cover-c--radiator-bank.webp",
         "subject": "Tank top and cooling radiators of the floodlit transformer",
