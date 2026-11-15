@@ -40,7 +40,7 @@ export function Cover({ n }: { n: number }) {
           {COVER.tagline}
         </p>
         <div className="rise mt-8 flex flex-wrap items-center gap-3" style={{ "--d": 6 } as React.CSSProperties}>
-          <a href="#problem" className="inline-flex h-11 items-center gap-2 rounded-full bg-white px-5 text-[14.5px] font-semibold text-ink hover:bg-white/90">
+          <a href="#solution" className="inline-flex h-11 items-center gap-2 rounded-full bg-white px-5 text-[14.5px] font-semibold text-ink hover:bg-white/90">
             Start the deck
             <ArrowDown className="h-4 w-4" strokeWidth={2} aria-hidden />
           </a>
