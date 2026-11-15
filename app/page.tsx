@@ -10,7 +10,7 @@ import { FLAGSHIP, GROUPS } from "@/content/deck";
 
 const PDF = "/enlight-layer-pitch.pdf";
 
-const AREA_TONES: Tone[] = ["paper-2", "dark", "paper", "dark", "paper", "dark", "paper"];
+const AREA_TONES: Tone[] = ["paper", "dark", "paper", "dark", "paper", "dark", "paper"];
 
 type Entry = SlideMeta & { render: (n: number, pdf?: string) => React.ReactNode };
 
@@ -20,7 +20,13 @@ const SLIDES: Entry[] = [
   { id: "problem", label: "The problem", tone: "paper", render: (n) => <Problem n={n} /> },
   { id: "services", label: "Our services", tone: "dark", render: (n) => <Focus n={n} /> },
   { id: "old-equipment", label: FLAGSHIP.kicker, tone: "paper", render: (n) => <Flagship n={n} /> },
-  ...GROUPS.map((g, k): Entry => ({ id: g.id, label: g.name, tone: AREA_TONES[k], render: (n) => <Area n={n} group={g} tone={AREA_TONES[k]} /> })),
+  // the first area continues "Where we start": same look, labelled 2/2
+  ...GROUPS.map((g, k): Entry => ({
+    id: g.id,
+    label: k === 0 ? FLAGSHIP.kicker : g.name,
+    tone: AREA_TONES[k],
+    render: (n) => <Area n={n} group={g} tone={AREA_TONES[k]} label={k === 0 ? `${FLAGSHIP.kicker} · 2/2 · ${g.name}` : undefined} />,
+  })),
   { id: "deployment", label: "How it's deployed", tone: "paper-2", render: (n) => <Deploy n={n} /> },
   { id: "trust", label: "Privacy and safety", tone: "dark", render: (n) => <Trust n={n} /> },
   { id: "market", label: "Market", tone: "paper", render: (n) => <Market n={n} /> },

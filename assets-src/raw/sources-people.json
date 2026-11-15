@@ -262,5 +262,24 @@
       "https://commons.wikimedia.org/wiki/File:Grey_wolf_in_Bavarian_Forest_National_Park.jpg"
     ],
     "notes": "Licence verified on the Commons file page: {{self|cc-by-sa-4.0}}, own work; Commons Quality Image and Wiki Loves Earth 2018 (Germany) winner. Taken in the Lusen animal enclosure of Bavarian Forest National Park (natural forest setting, no fences visible). Downloaded the 3840 px Wikimedia rendition."
+  },
+  {
+    "slug": "warehouse-exit",
+    "title": "File:ID Logistics Bollène- ITM- quais et filmeuses cellule D.jpg",
+    "page_url": "https://commons.wikimedia.org/wiki/File:ID_Logistics_Boll%C3%A8ne-_ITM-_quais_et_filmeuses_cellule_D.jpg",
+    "author": "RhôneA7",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "date_taken": "2024-03-19",
+    "retrieved": "2026-11-16",
+    "original_size": [
+      4000,
+      3000
+    ],
+    "downloaded_size": [
+      3840,
+      2880
+    ],
+    "notes": "Licence CC BY 4.0 per the Commons file metadata (LicenseShortName). No people in the frame. Chosen for workplace-safety (HSE) monitoring: marked walkways, zebra crossing, and pallets left in front of an emergency exit."
   }
 ]

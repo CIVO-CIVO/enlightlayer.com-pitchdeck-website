@@ -1070,6 +1070,98 @@
         ]
       ],
       "notes": "Bay Head Beach Replenishment at Night, Crew and Excavator · taken 4 July 2025, Bay Head, New Jersey (Nikon Z 7II) · CAT and contractor logos blurred"
+    },
+    {
+      "slug": "warehouse-exit",
+      "raw": "assets-src/raw/warehouse-exit.jpg",
+      "crop": [
+        0,
+        0.1,
+        1,
+        0.8
+      ],
+      "alt": "A modern logistics hall: blue painted pedestrian walkways and a zebra crossing on the concrete floor, wrapped pallets parked in marked lanes in front of loading docks 49 to 51, and a green emergency-exit door with pallets stacked right in front of it.",
+      "subject": "Logistics hall with pallets stacked in front of an emergency exit",
+      "focal": [
+        0.62,
+        0.5
+      ],
+      "quiet": [
+        "bottom"
+      ],
+      "people": "none",
+      "tags": [
+        "modern",
+        "interior",
+        "warehouse",
+        "logistics",
+        "hse",
+        "safety",
+        "emergency-exit",
+        "walkway",
+        "pallets",
+        "france"
+      ],
+      "credit": {
+        "author": "RhôneA7",
+        "source": "Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File:ID_Logistics_Boll%C3%A8ne-_ITM-_quais_et_filmeuses_cellule_D.jpg",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "rois": [
+        {
+          "key": "blocked-exit",
+          "kind": "thermal",
+          "subject": "Pallets stacked in front of the green emergency-exit door",
+          "suggestion": "Emergency exit blocked — goods left in front of the door",
+          "box": [
+            0.8,
+            0.37,
+            0.115,
+            0.195
+          ],
+          "hot": [
+            [
+              0.6,
+              0.5,
+              1
+            ],
+            [
+              0.435,
+              0.74,
+              0.8
+            ]
+          ],
+          "spread": [
+            0.26,
+            0.3
+          ],
+          "lum": 0.5,
+          "shape": "ellipse"
+        }
+      ],
+      "retouch": [
+        [
+          0.266,
+          0.358,
+          0.044,
+          0.024
+        ],
+        [
+          0.163,
+          0.45,
+          0.026,
+          0.04
+        ],
+        [
+          0.466,
+          0.533,
+          0.04,
+          0.054
+        ]
+      ],
+      "notes": "ID Logistics Bollène — ITM — quais et filmeuses cellule D · taken 19 March 2024, Bollène, France · wrapper brand, bin poster and box lettering blurred"
     }
   ]
 }

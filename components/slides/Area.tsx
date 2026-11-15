@@ -12,13 +12,13 @@ const SENSE_ICON: Record<Sense, typeof Camera> = { camera: Camera, thermal: Ther
  * globals.css): the chosen one opens its details and shows its photograph.
  * The first service is open by default — also in the PDF.
  */
-export function Area({ n, group, tone }: { n: number; group: Group; tone: Tone }) {
+export function Area({ n, group, tone, label }: { n: number; group: Group; tone: Tone; label?: string }) {
   const items = servicesIn(group.id);
   const index = GROUPS.findIndex((g) => g.id === group.id) + 1;
   const dark = tone === "dark";
 
   return (
-    <Slide id={group.id} n={n} label={`Area ${pad(index)} · ${group.name}`} tone={tone}>
+    <Slide id={group.id} n={n} label={label ?? `Area ${pad(index)} · ${group.name}`} tone={tone}>
       <div className="svc mt-[clamp(14px,3vh,36px)] grid flex-1 gap-8 lg:min-h-0 lg:grid-cols-12 lg:gap-12">
         <div className="flex flex-col lg:col-span-5">
           <h2 className="t-title rise">{group.title}</h2>

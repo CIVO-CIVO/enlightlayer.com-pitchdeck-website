@@ -201,15 +201,15 @@ export function Focus({ n }: { n: number }) {
 export function Flagship({ n }: { n: number }) {
   const max = Math.max(...FLAGSHIP.compare.map((c) => c.value));
   return (
-    <Slide id="old-equipment" n={n} label={FLAGSHIP.kicker} tone="paper">
-      <div className="mt-[clamp(18px,4vh,44px)] grid flex-1 items-stretch gap-10 lg:grid-cols-12 lg:gap-12">
-        <div className="flex flex-col lg:col-span-6">
-          <h2 className="t-slide rise">{FLAGSHIP.title}</h2>
-          <p className="t-lead muted rise mt-5 max-w-[36rem]" style={{ "--d": 2 } as React.CSSProperties}>
+    <Slide id="old-equipment" n={n} label={`${FLAGSHIP.kicker} · 1/2`} tone="paper">
+      <div className="mt-[clamp(14px,3vh,36px)] grid flex-1 items-stretch gap-8 lg:min-h-0 lg:grid-cols-12 lg:gap-12">
+        <div className="flex flex-col lg:col-span-5">
+          <h2 className="t-title rise">{FLAGSHIP.title}</h2>
+          <p className="t-lead muted rise mt-3" style={{ "--d": 2 } as React.CSSProperties}>
             {FLAGSHIP.text}
           </p>
 
-          <figure className="rise mt-[clamp(20px,4.5vh,44px)]" style={{ "--d": 3 } as React.CSSProperties}>
+          <figure className="rise mt-[clamp(14px,3.4vh,36px)]" style={{ "--d": 3 } as React.CSSProperties}>
             <figcaption className="t-label muted">Cost to get one old panel online</figcaption>
             <div className="mt-3 grid gap-4">
               {FLAGSHIP.compare.map((c, k) => (
@@ -231,7 +231,7 @@ export function Flagship({ n }: { n: number }) {
             <p className="muted mt-3 text-[12px] italic">{FLAGSHIP.footnote}</p>
           </figure>
 
-          <ul className="hairline mt-auto grid gap-4 border-t pt-5 sm:grid-cols-3">
+          <ul className="hairline mt-auto grid gap-4 border-t pt-[clamp(12px,2.2vh,20px)] sm:grid-cols-3 sm:gap-5">
             {FLAGSHIP.facts.map((f, k) => (
               <li key={f.title} className="rise" style={{ "--d": 5 + k } as React.CSSProperties}>
                 <p className="text-[15px] font-semibold tracking-[-0.015em]">{f.title}</p>
@@ -243,8 +243,8 @@ export function Flagship({ n }: { n: number }) {
         <Scene
           slug={FLAGSHIP.photo}
           card={FLAGSHIP.card}
-          className="min-h-[340px] rounded-[12px] lg:col-span-6 lg:min-h-0"
-          sizes="(min-width: 1024px) 46vw, 100vw"
+          className="fade-in min-h-[340px] rounded-[12px] lg:col-span-7 lg:min-h-0"
+          sizes="(min-width: 1024px) 56vw, 100vw"
         />
       </div>
     </Slide>

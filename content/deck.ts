@@ -50,8 +50,8 @@ export const GROUPS: Group[] = [
   {
     id: "rounds",
     name: "Rounds & readings",
-    title: "Old equipment, read by camera.",
-    line: "Panels, gauges and inspection rounds — digitized without touching the equipment.",
+    title: "Three ways to upgrade — without replacing anything.",
+    line: "A camera on what's already there reads it, checks it and documents it — around the clock.",
     tone: "paper",
   },
   {
@@ -63,9 +63,9 @@ export const GROUPS: Group[] = [
   },
   {
     id: "people",
-    name: "People safety",
-    title: "The second someone is in the wrong place.",
-    line: "Sites where the risk is a person in a danger zone — or a person who doesn't get up.",
+    name: "Safety & HSE",
+    title: "Safety rules, checked every minute.",
+    line: "Cameras around the workplace check that the rules are followed — and catch the moment someone is at risk.",
     tone: "dark",
   },
   {
@@ -212,20 +212,21 @@ export const SERVICES: Service[] = [
 
   // ── 03 People safety ─────────────────────────────────────────────────────
   {
-    id: "construction-safety",
+    id: "workplace-safety",
     group: "people",
-    name: "Construction site safety",
-    short: "Construction HSE",
-    line: "Watches the whole site for the situations that lead to accidents — and tells the site manager right away.",
-    watches: "Helmets and high-vis, people inside a machine's swing radius or under a load, open edges, closed zones.",
-    alert: "a person walks into the excavator's swing radius while it is working",
-    then: "The site manager is alerted in seconds; the day's safety log writes itself.",
-    buyers: "Contractors, construction companies and project owners.",
-    value: "Fewer near-misses, documented HSE work, safer sites.",
+    name: "Workplace safety (HSE)",
+    short: "Workplace HSE",
+    line: "Cameras around the workplace check, all day, that safety rules are followed — and keep the record for inspections.",
+    watches:
+      "Emergency exits and escape routes, walkways and forklift lanes, helmets and high-vis in marked zones, people under loads or near moving machines, fire equipment.",
+    alert: "an emergency exit is blocked, someone without a helmet or vest enters a marked zone, or a person walks into a forklift lane",
+    then: "The shift or site manager gets the picture and the place at once; every deviation lands in the HSE log.",
+    buyers: "Warehouses, factories, workshops and construction companies — any workplace with safety rules to follow.",
+    value: "Fewer accidents and near-misses — and HSE documentation ready for inspections and audits.",
     senses: ["camera"],
-    photo: "construction-safety",
+    photo: "warehouse-exit",
     note: "Detects situations, not identities — no face recognition.",
-    card: { meta: "Zone B · excavator 2", title: "Person inside swing radius" },
+    card: { meta: "Hall D · exit by dock 49", title: "Emergency exit blocked — pallets" },
   },
   {
     id: "shooting-ranges",
@@ -584,7 +585,7 @@ export const FOCUS = {
 export const FLAGSHIP = {
   kicker: "Where we start",
   title: "Old equipment online — at about 1/25 of the price.",
-  text: "Most sites run on equipment that was never connected. Replacing the control system means new panels, rewiring and downtime. We point a camera at what's already there.",
+  text: "Most sites run on equipment that was never connected. Replacing the control system means new panels, rewiring and downtime. We point a camera at what's already there — and watch it around the clock.",
   facts: [
     { title: "No shutdown", text: "Nothing is opened, rewired or replaced." },
     { title: "Data from day one", text: "Every reading, every minute, with history." },
@@ -654,6 +655,7 @@ export const MARKET = {
     "Grid operators",
     "Process industry",
     "Manufacturers",
+    "Warehouses & logistics",
     "Construction",
     "Waste & recycling",
     "Ports & terminals",

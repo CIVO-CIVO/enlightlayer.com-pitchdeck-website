@@ -619,6 +619,37 @@ export const photos = {
     "people": "non-identifiable",
     "tags": ["modern", "night", "construction", "excavator", "workers", "hi-vis", "heavy-machinery", "outdoor"]
   },
+  "warehouse-exit": {
+    "slug": "warehouse-exit",
+    "src": "/img/photo/warehouse-exit.jpg",
+    "thumb": "/img/thumb/warehouse-exit.jpg",
+    "width": 2048,
+    "height": 1229,
+    "alt": "A modern logistics hall: blue painted pedestrian walkways and a zebra crossing on the concrete floor, wrapped pallets parked in marked lanes in front of loading docks 49 to 51, and a green emergency-exit door with pallets stacked right in front of it.",
+    "subject": "Logistics hall with pallets stacked in front of an emergency exit",
+    "tone": "mid",
+    "focal": [0.62, 0.5],
+    "quiet": ["bottom"],
+    "rois": [
+      {
+        "key": "blocked-exit",
+        "box": [0.7998, 0.37022, 0.11523, 0.19528],
+        "kind": "thermal",
+        "overlay": "/img/ir/warehouse-exit--blocked-exit.webp",
+        "subject": "Pallets stacked in front of the green emergency-exit door",
+        "suggestion": "Emergency exit blocked — goods left in front of the door"
+      }
+    ],
+    "credit": {
+      "author": "RhôneA7",
+      "source": "Wikimedia Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:ID_Logistics_Boll%C3%A8ne-_ITM-_quais_et_filmeuses_cellule_D.jpg",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "people": "none",
+    "tags": ["modern", "interior", "warehouse", "logistics", "hse", "safety", "emergency-exit", "walkway", "pallets", "france"]
+  },
   "cover": {
     "slug": "cover",
     "src": "/img/photo/cover.jpg",
@@ -690,12 +721,12 @@ export const photos = {
     "alt": "An unmanned substation at night: a floodlit power transformer with its radiators and porcelain bushings stands under dark sky beside a second transformer and the switchyard.",
     "subject": "Floodlit transformers in a rural substation at night",
     "tone": "dark",
-    "focal": [0.6, 0.62],
+    "focal": [0.4, 0.62],
     "quiet": ["top"],
     "rois": [
       {
         "key": "radiator-bank",
-        "box": [0.62988, 0.55017, 0.16992, 0.21972],
+        "box": [0.2002, 0.55017, 0.16992, 0.21972],
         "kind": "thermal",
         "overlay": "/img/ir/cover-c--radiator-bank.webp",
         "subject": "Tank top and cooling radiators of the floodlit transformer",
