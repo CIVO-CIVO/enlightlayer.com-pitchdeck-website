@@ -580,67 +580,58 @@ export const SOLUTION = {
 export const IDEAS = {
   kicker: "Everyday ideas",
   title: "Ideas for the cameras you already have.",
-  text: "Most of these need nothing more than an ordinary camera and a phone. Find the place that looks like yours.",
+  text: "Most of these need nothing more than an ordinary camera and a phone.",
+  tags: ["Safety", "Theft", "Leaks & damage", "Downtime"],
+  /** photo cards; the first is the big one */
   groups: [
     {
       id: "sites",
       name: "Building sites",
-      who: "Builders and contractors",
-      items: ["Helmet or vest missing in a marked zone.", "Someone inside a working machine's reach.", "Materials left uncovered with rain on the way."],
+      main: true,
+      photo: "idea-site",
+      items: ["Helmets and vests in marked zones", "people inside a machine's reach", "materials left out in the rain"],
     },
-    {
-      id: "shops",
-      name: "Shops",
-      who: "Stores, kiosks, garden centers",
-      items: [
-        "Goods slipped into a pocket or bag in the aisle.",
-        "An item bagged at self-checkout without a scan.",
-        "A queue building up, so you can open another till.",
-      ],
-    },
-    {
-      id: "homes",
-      name: "Apartment buildings",
-      who: "Housing co-ops and landlords",
-      items: ["Garage or entrance door left open.", "Water on the floor in the basement or laundry room.", "Bikes or rubbish blocking an escape route."],
-    },
-    {
-      id: "storage",
-      name: "Warehouses & shipping",
-      who: "Storage, logistics, terminals",
-      items: ["A pallet left in a walkway or in front of an exit.", "People and forklifts too close.", "A dock door open with no truck at it."],
-    },
-    {
-      id: "production",
-      name: "Production lines",
-      who: "Dairies, food and factories",
-      items: ["A bottle falls or the line jams.", "The line stops, or runs empty.", "A spill on the floor next to the line."],
-    },
-    {
-      id: "farms",
-      name: "Farms & animals",
-      who: "Barns, stables, pastures",
-      items: ["An animal lying still too long, or apart from the rest.", "Calving or lambing has started.", "An empty water trough or an open gate."],
-    },
+    { id: "storage", name: "Warehouses & shipping", photo: "idea-warehouse", items: ["Pallets in walkways", "people near forklifts", "dock doors left open"] },
+    { id: "shops", name: "Shops", photo: "idea-shop", items: ["Goods slipped into a pocket", "items bagged without a scan", "queues at the till"] },
+    { id: "homes", name: "Apartment buildings", photo: "idea-apartments", items: ["Doors left open", "water in the basement", "bikes blocking escape routes"] },
+    { id: "production", name: "Dairies & production lines", photo: "idea-production", items: ["Bottles falling", "line jams and stops", "spills by the line"] },
+    { id: "farms", name: "Farms & animals", photo: "idea-farm", items: ["An animal lying still too long", "calving and lambing", "empty troughs, open gates"] },
     {
       id: "selfservice",
-      name: "Self-service places",
-      who: "Laundries, solariums, car washes",
-      items: ["A machine stops with an error, or leaks.", "Damage or vandalism in the room.", "Someone falls and needs help."],
-    },
-    {
-      id: "night",
-      name: "Nights & after hours",
-      who: "Any site that's empty at night",
-      items: [
-        "Someone on the site after closing.",
-        "A car that keeps circling, or waits with its lights off.",
-        "Someone close to the copper, cables or tools.",
-      ],
+      name: "Laundries & self-service",
+      photo: "idea-selfservice",
+      items: ["Machine errors and leaks", "damage and vandalism", "someone who falls"],
     },
   ],
+};
+
+export const MORE_IDEAS = {
+  kicker: "More ideas",
+  title: "More ideas. Bring your own.",
+  text: "If a person standing there could see it, a camera can watch for it.",
+  night: {
+    id: "night",
+    name: "Nights & after hours",
+    photo: "idea-night",
+    items: ["Someone on site after closing", "a car circling with its lights off", "people near copper, cables and tools"],
+  },
+  ideas: [
+    { id: "cold", place: "Restaurants", text: "Freezer or cold-room door left open." },
+    { id: "kitchen", place: "Kitchens", text: "Hairnet or gloves missing at the prep table." },
+    { id: "cabins", place: "Holiday cabins", text: "Snow piling up on the roof." },
+    { id: "icicles", place: "Entrances", text: "Icicles hanging over the door." },
+    { id: "recycling", place: "Recycling stations", text: "A full container, or rubbish dumped beside it." },
+    { id: "parking", place: "Parking & charging", text: "A car blocking the fire lane or a charger." },
+    { id: "gym", place: "24/7 gyms", text: "Someone lying still in an unstaffed gym." },
+    { id: "school", place: "Schools", text: "The playground gate left open." },
+    { id: "lobby", place: "Hotels & lobbies", text: "A bag left alone for too long." },
+    { id: "heritage", place: "Wooden buildings", text: "Smoke or flames near a stave church or old house." },
+    { id: "graffiti", place: "Property owners", text: "Fresh graffiti on the wall overnight." },
+    { id: "greenhouse", place: "Greenhouses", text: "A roof vent stuck shut on a hot day." },
+  ],
   how: ["Your camera", "A model for that one problem", "An alert with the picture on your phone"],
-  fine: "No face recognition. Never in changing rooms, cabins or private homes.",
+  fine: "No face recognition. Never in changing rooms, tanning booths or inside homes.",
+  cta: "Have an idea of your own? Tell us.",
 };
 
 export const FOCUS = {

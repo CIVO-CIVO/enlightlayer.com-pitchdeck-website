@@ -4,10 +4,10 @@ import { Fragment } from "react";
 import { Deck, type SlideMeta } from "@/components/Deck";
 import type { Tone } from "@/components/Slide";
 import { Area } from "@/components/slides/Area";
-import { Ideas } from "@/components/slides/Ideas";
+import { Ideas, MoreIdeas } from "@/components/slides/Ideas";
 import { Contact, Deploy, Market, Trust } from "@/components/slides/Closing";
 import { Cover, Flagship, Focus, Problem, Solution } from "@/components/slides/Opening";
-import { FLAGSHIP, GROUPS, IDEAS } from "@/content/deck";
+import { FLAGSHIP, GROUPS, IDEAS, MORE_IDEAS } from "@/content/deck";
 
 const PDF = "/enlight-layer-pitch.pdf";
 
@@ -32,6 +32,7 @@ const SLIDES: Entry[] = [
   { id: "deployment", label: "How it's deployed", tone: "paper-2", render: (n) => <Deploy n={n} /> },
   { id: "trust", label: "Privacy and safety", tone: "dark", render: (n) => <Trust n={n} /> },
   { id: "market", label: "Market", tone: "paper", render: (n) => <Market n={n} /> },
+  { id: "more-ideas", label: MORE_IDEAS.kicker, tone: "paper-2", render: (n) => <MoreIdeas n={n} /> },
   { id: "contact", label: "Contact", tone: "dark", render: (n, pdf) => <Contact n={n} pdf={pdf} /> },
 ];
 

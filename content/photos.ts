@@ -3,6 +3,253 @@
 import type { Photo } from "./photos.types";
 
 export const photos = {
+  "idea-site": {
+    "slug": "idea-site",
+    "src": "/img/photo/idea-site.jpg",
+    "thumb": "/img/thumb/idea-site.jpg",
+    "width": 2048,
+    "height": 1290,
+    "alt": "A residential and commercial building under construction in Dresden: scaffolding with blue toe boards along a long concrete shell, three tower cranes, workers on the scaffold seen from a distance, and tall stacks of timber formwork panels standing uncovered on pallets by the road next to a red skip.",
+    "subject": "Building site with uncovered formwork timber stacked by the road",
+    "tone": "mid",
+    "focal": [0.32, 0.62],
+    "quiet": ["top"],
+    "rois": [
+      {
+        "key": "uncovered-timber",
+        "box": [0.10986, 0.53023, 0.2998, 0.4],
+        "kind": "thermal",
+        "overlay": "/img/ir/idea-site--uncovered-timber.webp",
+        "subject": "Stacks of formwork timber on pallets, left uncovered",
+        "suggestion": "Building materials left uncovered: rain on the way"
+      }
+    ],
+    "credit": {
+      "author": "Bybbisch94",
+      "source": "Wikimedia Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:20260316.Baustelle_L%C3%B6btauer-Fr%C3%B6bel_Stra%C3%9Fe.-014.jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    "people": "non-identifiable",
+    "tags": ["modern", "exterior", "construction", "building-site", "scaffolding", "cranes", "materials", "weather", "germany"]
+  },
+  "idea-shop": {
+    "slug": "idea-shop",
+    "src": "/img/photo/idea-shop.jpg",
+    "thumb": "/img/thumb/idea-shop.jpg",
+    "width": 2048,
+    "height": 1225,
+    "alt": "A long supermarket aisle with shelves of cereal and snacks on both sides and a shallow depth of field; at the far end a shopper in a winter coat, seen from behind, pushes a trolley past a red drinks cooler.",
+    "subject": "Supermarket aisle with a lone shopper and trolley",
+    "tone": "mid",
+    "focal": [0.55, 0.45],
+    "quiet": ["bottom"],
+    "rois": [
+      {
+        "key": "aisle-shopper",
+        "box": [0.45996, 0.2702, 0.2002, 0.42041],
+        "kind": "thermal",
+        "overlay": "/img/ir/idea-shop--aisle-shopper.webp",
+        "subject": "Shopper with a trolley at the end of the aisle",
+        "suggestion": "Item slipped into a bag before the checkout"
+      }
+    ],
+    "credit": {
+      "author": "Tessa Bury",
+      "source": "Wikimedia Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:Grocery_Store_Aisle,_vermont.jpg",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "people": "non-identifiable",
+    "tags": ["modern", "interior", "retail", "supermarket", "aisle", "shopper", "loss-prevention", "usa"]
+  },
+  "idea-apartments": {
+    "slug": "idea-apartments",
+    "src": "/img/photo/idea-apartments.jpg",
+    "thumb": "/img/thumb/idea-apartments.jpg",
+    "width": 2048,
+    "height": 1202,
+    "alt": "The covered ramp down to a residents' underground garage between two apartment blocks: a corrugated roof on steel beams, bare concrete side walls, a yellow and black clearance beam and a bollard in front of the wide-open garage entrance.",
+    "subject": "Residents' underground garage entrance standing open",
+    "tone": "mid",
+    "focal": [0.48, 0.62],
+    "quiet": ["bottom"],
+    "rois": [
+      {
+        "key": "garage-open",
+        "box": [0.2998, 0.47005, 0.3999, 0.45008],
+        "kind": "thermal",
+        "overlay": "/img/ir/idea-apartments--garage-open.webp",
+        "subject": "Open entrance of the residents' underground garage",
+        "suggestion": "Garage door left open for 20 minutes"
+      }
+    ],
+    "credit": {
+      "author": "PantheraLeo1359531",
+      "source": "Wikimedia Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:Einfahrt_zur_Tiefgarage_20241112_HOF6428-HDR_RAW-Export.png",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "people": "none",
+    "tags": ["modern", "exterior", "residential", "apartment-building", "garage", "door", "access"]
+  },
+  "idea-warehouse": {
+    "slug": "idea-warehouse",
+    "src": "/img/photo/idea-warehouse.jpg",
+    "thumb": "/img/thumb/idea-warehouse.jpg",
+    "width": 2048,
+    "height": 1229,
+    "alt": "A large, bright logistics hall with timber roof beams: a single pallet with a tall carton left standing on the open concrete floor, a loaded pallet on a pallet truck, stacks of plastic pallets along the far wall, stretch-wrapping machines, the zone H loading door and two forklifts in the background.",
+    "subject": "Logistics hall with a pallet left on the open floor",
+    "tone": "mid",
+    "focal": [0.4, 0.55],
+    "quiet": ["bottom"],
+    "rois": [
+      {
+        "key": "pallet-floor",
+        "box": [0.1499, 0.48007, 0.22998, 0.41985],
+        "kind": "thermal",
+        "overlay": "/img/ir/idea-warehouse--pallet-floor.webp",
+        "subject": "Pallet with a tall carton left on the open floor",
+        "suggestion": "Pallet left in the driving lane"
+      }
+    ],
+    "credit": {
+      "author": "RhôneA7",
+      "source": "Wikimedia Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:ID_Logistics_Boll%C3%A8ne-_ITM-_Zone_H_et_palettes_plastiques.jpg",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "people": "non-identifiable",
+    "tags": ["modern", "interior", "warehouse", "logistics", "pallets", "forklift", "hse", "france"]
+  },
+  "idea-production": {
+    "slug": "idea-production",
+    "src": "/img/photo/idea-production.jpg",
+    "thumb": "/img/thumb/idea-production.jpg",
+    "width": 2048,
+    "height": 1275,
+    "alt": "A modern brewery bottling hall seen from a gallery: stainless-steel conveyors carry long rows of brown bottles past fillers, labellers and a glass-walled packing machine, and a wet patch spreads across the tiled floor next to the line beside a yellow warning sign.",
+    "subject": "Bottling hall with a spill on the floor next to the line",
+    "tone": "mid",
+    "focal": [0.55, 0.58],
+    "rois": [
+      {
+        "key": "floor-spill",
+        "box": [0.5498, 0.56, 0.22021, 0.24],
+        "kind": "thermal",
+        "overlay": "/img/ir/idea-production--floor-spill.webp",
+        "subject": "Wet patch on the floor next to the bottling line",
+        "suggestion": "Spill on the floor next to the line"
+      }
+    ],
+    "credit": {
+      "author": "Seth Taylor",
+      "source": "Wikimedia Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:Sierra_Nevada_Bottling.jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    "people": "none",
+    "tags": ["modern", "interior", "production", "bottling", "brewery", "conveyor", "spill", "hse", "usa"]
+  },
+  "idea-farm": {
+    "slug": "idea-farm",
+    "src": "/img/photo/idea-farm.jpg",
+    "thumb": "/img/thumb/idea-farm.jpg",
+    "width": 2048,
+    "height": 1365,
+    "alt": "Close view inside a lambing pen in a ranch barn: a ewe lies in wood-shavings bedding against the pen wall, and her newborn lamb, with half-closed eyes, rests pressed against her side.",
+    "subject": "Ewe with a newborn lamb in a lambing pen",
+    "tone": "mid",
+    "focal": [0.4, 0.55],
+    "quiet": ["right"],
+    "rois": [
+      {
+        "key": "newborn-lamb",
+        "box": [0, 0.50037, 0.45996, 0.49963],
+        "kind": "thermal",
+        "overlay": "/img/ir/idea-farm--newborn-lamb.webp",
+        "subject": "Newborn lamb lying against the ewe in the lambing pen",
+        "suggestion": "Lambing has started in this pen"
+      }
+    ],
+    "credit": {
+      "author": "U.S. Fish and Wildlife Service, photo by Jennifer Strickland",
+      "source": "Wikimedia Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:A_ewe_and_her_lamb_at_Reed_Ranch_(40871239920).jpg",
+      "license": "Public domain (U.S. Fish and Wildlife Service work)",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/Template:PD-USGov-FWS"
+    },
+    "people": "none",
+    "tags": ["modern", "interior", "farm", "sheep", "lambing", "barn", "animal-welfare", "usa"]
+  },
+  "idea-selfservice": {
+    "slug": "idea-selfservice",
+    "src": "/img/photo/idea-selfservice.jpg",
+    "thumb": "/img/thumb/idea-selfservice.jpg",
+    "width": 2048,
+    "height": 1202,
+    "alt": "A self-service laundromat in black and white: a long row of numbered stainless-steel front-loading washing machines, one with its door open, stacked dryers in the back corner, plastic waiting chairs in the foreground and a tiled floor.",
+    "subject": "Self-service laundromat with a row of washing machines",
+    "tone": "mid",
+    "focal": [0.6, 0.5],
+    "quiet": ["top"],
+    "rois": [
+      {
+        "key": "machine-7",
+        "box": [0.6001, 0.33028, 0.24023, 0.48003],
+        "kind": "thermal",
+        "overlay": "/img/ir/idea-selfservice--machine-7.webp",
+        "subject": "Washing machine 7, door and control panel",
+        "suggestion": "Machine stopped mid-cycle with an error"
+      }
+    ],
+    "credit": {
+      "author": "Jamain",
+      "source": "Wikimedia Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:Laundromat_J2.jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    "people": "none",
+    "tags": ["modern", "interior", "self-service", "laundromat", "washing-machines", "unstaffed", "belgium", "black-and-white"]
+  },
+  "idea-night": {
+    "slug": "idea-night",
+    "src": "/img/photo/idea-night.jpg",
+    "thumb": "/img/thumb/idea-night.jpg",
+    "width": 2048,
+    "height": 1198,
+    "alt": "A wet, empty parking lot at night in thick fog: sodium street lights glow orange, bare trees line the far edge, and a single white pickup truck stands alone in the middle of the lot with its lights off.",
+    "subject": "Foggy parking lot at night with one pickup truck parked alone",
+    "tone": "mid",
+    "focal": [0.45, 0.6],
+    "quiet": ["top"],
+    "rois": [
+      {
+        "key": "parked-truck",
+        "box": [0.33008, 0.53005, 0.24023, 0.2596],
+        "kind": "thermal",
+        "overlay": "/img/ir/idea-night--parked-truck.webp",
+        "subject": "Pickup truck parked alone in the empty lot",
+        "suggestion": "Vehicle waiting with its lights off after closing"
+      }
+    ],
+    "credit": {
+      "author": "Famartin",
+      "source": "Wikimedia Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:2026-01-07_03_52_43_A_foggy_night_view_toward_a_parking_lot_along_Pioneer_Boulevard_in_Westampton_Township,_Burlington_County,_New_Jersey.jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    "people": "none",
+    "tags": ["modern", "exterior", "night", "fog", "parking-lot", "vehicle", "after-hours", "usa"]
+  },
   "machine-health": {
     "slug": "machine-health",
     "src": "/img/photo/machine-health.jpg",
