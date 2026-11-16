@@ -1,5 +1,5 @@
-import { ArrowDown, ArrowRight } from "lucide-react";
-import { COVER, FLAGSHIP, FOCUS, GROUPS, PROBLEM, SERVICES, SOLUTION, servicesIn } from "@/content/deck";
+import { ArrowDown } from "lucide-react";
+import { COVER, FLAGSHIP, PROBLEM, SOLUTION } from "@/content/deck";
 import { cx } from "@/lib/cx";
 import { Scene } from "../Scene";
 import { Slide } from "../Slide";
@@ -19,6 +19,7 @@ export function Cover({ n }: { n: number }) {
         <Scene
           slug={COVER.photo}
           mirror={COVER.mirror}
+          side={COVER.side}
           card={COVER.card}
           eager
           label={null}
@@ -149,50 +150,6 @@ export function Solution({ n }: { n: number }) {
           />
         </div>
       </div>
-    </Slide>
-  );
-}
-
-/* ── 04 · Focus: niche on purpose + the index of all services ────────────── */
-export function Focus({ n }: { n: number }) {
-  return (
-    <Slide id="services" n={n} label="Our services" tone="dark">
-      <div className="mt-[clamp(18px,4vh,44px)] grid gap-6 lg:grid-cols-12 lg:items-end">
-        <h2 className="t-slide rise lg:col-span-5">{FOCUS.title}</h2>
-        <p className="t-lead rise text-white/70 lg:col-span-6 lg:col-start-7" style={{ "--d": 2 } as React.CSSProperties}>
-          {FOCUS.text}
-        </p>
-      </div>
-      <div className="mt-[clamp(22px,5vh,52px)] grid flex-1 grid-cols-2 content-start gap-x-5 gap-y-7 sm:grid-cols-4 xl:grid-cols-7">
-        {GROUPS.map((g, k) => (
-          <section key={g.id} className="rise border-t border-white/15 pt-3" style={{ "--d": 3 + k } as React.CSSProperties} aria-labelledby={`idx-${g.id}`}>
-            <p className="t-label text-white/55 tabular-nums">{pad(k + 1)}</p>
-            <h3 id={`idx-${g.id}`} className="mt-1 text-[15px] leading-tight font-semibold tracking-[-0.015em] 2xl:text-[18px]">
-              <a href={`#${g.id}`} className="hover:underline hover:underline-offset-4">
-                {g.name}
-              </a>
-            </h3>
-            <ul className="mt-3 grid gap-1.5 2xl:gap-2.5">
-              {servicesIn(g.id).map((s) => (
-                <li key={s.id}>
-                  <a href={`#svc-${s.id}`} className="group flex items-start gap-2 text-[13.5px] leading-snug text-white/70 hover:text-white 2xl:text-[15.5px]">
-                    <span className="mt-[7px] h-[5px] w-[5px] flex-none rounded-full bg-white/30 group-hover:bg-orange" aria-hidden />
-                    {s.short}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </section>
-        ))}
-      </div>
-      <p className="t-label rise mt-8 flex flex-wrap items-center gap-x-5 gap-y-2 text-white/60" style={{ "--d": 10 } as React.CSSProperties}>
-        <span>
-          {SERVICES.length} services · {GROUPS.length} areas · one layer
-        </span>
-        <span className="inline-flex items-center gap-1.5">
-          Each area follows <ArrowRight className="h-3.5 w-3.5" aria-hidden />
-        </span>
-      </p>
     </Slide>
   );
 }

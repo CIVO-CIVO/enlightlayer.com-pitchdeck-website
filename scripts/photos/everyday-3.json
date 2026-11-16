@@ -1,0 +1,704 @@
+{
+  "photos": [
+    {
+      "slug": "apartments-common",
+      "raw": "assets-src/raw/apartments-common.jpg",
+      "crop": [
+        0.022,
+        0.16,
+        0.978,
+        0.84
+      ],
+      "alt": "The shared bin room of an apartment building: a row of green wheelie bins and recycling containers along a concrete wall, the paper container heaped over the rim with flattened cardboard and bags, more cardboard and a black rubbish bag dumped on the floor beside it, and a dark door at the back.",
+      "subject": "Apartment building bin room with an overflowing paper container",
+      "focal": [
+        0.32,
+        0.5
+      ],
+      "quiet": [
+        "bottom"
+      ],
+      "people": "none",
+      "tags": [
+        "modern",
+        "interior",
+        "residential",
+        "apartment-building",
+        "common-area",
+        "bin-room",
+        "waste",
+        "sweden"
+      ],
+      "credit": {
+        "author": "Alicia Fagerving",
+        "source": "Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File:Soprum.jpg",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/"
+      },
+      "rois": [
+        {
+          "key": "bins-overflow",
+          "kind": "thermal",
+          "subject": "Paper container heaped over the rim, cardboard left beside the bins",
+          "suggestion": "Bin room overflowing, rubbish left on the floor",
+          "box": [
+            0.0286,
+            0.3,
+            0.6135,
+            0.5
+          ],
+          "hot": [
+            [
+              0.55,
+              0.34,
+              1
+            ],
+            [
+              0.283,
+              0.4,
+              0.7
+            ]
+          ],
+          "spread": [
+            0.3,
+            0.3
+          ],
+          "lum": 0.5,
+          "shape": "ellipse"
+        }
+      ],
+      "retouch": [
+        [
+          0.0695,
+          0.08,
+          0.2249,
+          0.28
+        ],
+        [
+          0.0,
+          0.355,
+          0.044,
+          0.125
+        ],
+        [
+          0.0235,
+          0.335,
+          0.0869,
+          0.165
+        ],
+        [
+          0.1053,
+          0.335,
+          0.092,
+          0.15
+        ],
+        [
+          0.2025,
+          0.35,
+          0.0562,
+          0.13
+        ],
+        [
+          0.2638,
+          0.355,
+          0.046,
+          0.11
+        ],
+        [
+          0.3098,
+          0.35,
+          0.0511,
+          0.11
+        ],
+        [
+          0.3916,
+          0.41,
+          0.0767,
+          0.075
+        ],
+        [
+          0.5808,
+          0.355,
+          0.0665,
+          0.09
+        ],
+        [
+          0.6626,
+          0.35,
+          0.0767,
+          0.095
+        ],
+        [
+          0.7802,
+          0.355,
+          0.0971,
+          0.09
+        ],
+        [
+          0.954,
+          0.35,
+          0.046,
+          0.11
+        ],
+        [
+          0.589,
+          0.485,
+          0.0256,
+          0.03
+        ],
+        [
+          0.6677,
+          0.505,
+          0.0307,
+          0.055
+        ],
+        [
+          0.7699,
+          0.515,
+          0.0358,
+          0.06
+        ],
+        [
+          0.862,
+          0.525,
+          0.0358,
+          0.06
+        ],
+        [
+          0.9642,
+          0.52,
+          0.0358,
+          0.065
+        ]
+      ],
+      "notes": "Soprum (garbage room in a student apartment house, Gothenburg, Sweden) · taken 21 August 2013 · instruction sign, recycling posters, bin labels and a supermarket bag blurred"
+    },
+    {
+      "slug": "carwash",
+      "raw": "assets-src/raw/carwash.jpg",
+      "crop": [
+        0.27,
+        0.445,
+        0.58,
+        0.43
+      ],
+      "alt": "A modern self-service car wash with jet-wash bays under a long canopy: a silver saloon stands parked in one bay with no one washing it, and in the next bay a dark saloon covered in foam is being sprayed with a lance, with wet foam spreading across the paved forecourt.",
+      "subject": "Self-service car wash bays with a car parked in one bay",
+      "focal": [
+        0.45,
+        0.45
+      ],
+      "quiet": [
+        "bottom"
+      ],
+      "people": "non-identifiable",
+      "tags": [
+        "modern",
+        "exterior",
+        "self-service",
+        "car-wash",
+        "unstaffed",
+        "vehicles",
+        "latvia"
+      ],
+      "credit": {
+        "author": "Андрей Романенко",
+        "source": "Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File:ADRI_self-service_car_wash_in_Jelgava.jpg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "rois": [
+        {
+          "key": "bay-blocked",
+          "kind": "thermal",
+          "subject": "Silver car parked in a wash bay with no wash running",
+          "suggestion": "Car parked in a wash bay, no wash running",
+          "box": [
+            0.1,
+            0.18,
+            0.36,
+            0.55
+          ],
+          "hot": [
+            [
+              0.49,
+              0.51,
+              1
+            ]
+          ],
+          "spread": [
+            0.3,
+            0.28
+          ],
+          "lum": 0.4,
+          "shape": "ellipse"
+        }
+      ],
+      "retouch": [
+        [
+          0.0,
+          0.0,
+          0.25,
+          0.03
+        ],
+        [
+          0.063,
+          0.245,
+          0.084,
+          0.078
+        ],
+        [
+          0.147,
+          0.212,
+          0.037,
+          0.1
+        ],
+        [
+          0.252,
+          0.212,
+          0.026,
+          0.1
+        ],
+        [
+          0.368,
+          0.245,
+          0.079,
+          0.078
+        ],
+        [
+          0.452,
+          0.19,
+          0.037,
+          0.122
+        ],
+        [
+          0.552,
+          0.19,
+          0.026,
+          0.111
+        ],
+        [
+          0.053,
+          0.4,
+          0.105,
+          0.1
+        ],
+        [
+          0.347,
+          0.422,
+          0.105,
+          0.133
+        ],
+        [
+          0.203,
+          0.489,
+          0.045,
+          0.039
+        ],
+        [
+          0.542,
+          0.572,
+          0.065,
+          0.05
+        ],
+        [
+          0.28,
+          0.21,
+          0.055,
+          0.21
+        ],
+        [
+          0.575,
+          0.2,
+          0.05,
+          0.26
+        ],
+        [
+          0.9,
+          0.625,
+          0.06,
+          0.045
+        ],
+        [
+          0.283,
+          0.35,
+          0.05,
+          0.07
+        ],
+        [
+          0.58,
+          0.36,
+          0.045,
+          0.08
+        ],
+        [
+          0.62,
+          0.035,
+          0.045,
+          0.035
+        ],
+        [
+          0.26,
+          0.095,
+          0.035,
+          0.03
+        ],
+        [
+          0.355,
+          0.09,
+          0.04,
+          0.03
+        ],
+        [
+          0.0,
+          0.15,
+          0.035,
+          0.03
+        ],
+        [
+          0.222,
+          0.438,
+          0.022,
+          0.03
+        ],
+        [
+          0.558,
+          0.532,
+          0.028,
+          0.034
+        ]
+      ],
+      "notes": "ADRI self-service car wash in Jelgava, Latvia · taken 17 April 2026 · only the arm of the person washing is visible · operator name, bay signs, instruction boards, equipment brand, both licence plates and the car badges blurred, canopy lettering cropped out"
+    },
+    {
+      "slug": "restaurant-cold",
+      "raw": "assets-src/raw/restaurant-cold.jpg",
+      "crop": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "alt": "A large stainless-steel commercial kitchen: prep tables in the foreground with trays of food under cling film, a big stock pot on the tiled floor, tilting kettles under extraction hoods, and two cooks in white jackets and hats working at the back.",
+      "subject": "Commercial kitchen with covered trays left on the prep tables",
+      "focal": [
+        0.55,
+        0.55
+      ],
+      "quiet": [
+        "top"
+      ],
+      "people": "blurred",
+      "tags": [
+        "modern",
+        "interior",
+        "kitchen",
+        "commercial-kitchen",
+        "food-safety",
+        "stainless-steel",
+        "hygiene"
+      ],
+      "credit": {
+        "author": "Larry D. Moore",
+        "source": "Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File:Galley_2_Harmony_of_the_Seas_2026.jpg",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "rois": [
+        {
+          "key": "tray-out",
+          "kind": "thermal",
+          "subject": "Covered food tray standing on the prep table outside the cold room",
+          "suggestion": "Tray out of the fridge for 2 hours",
+          "box": [
+            0.6,
+            0.4,
+            0.38,
+            0.5
+          ],
+          "hot": [
+            [
+              0.605,
+              0.52,
+              1
+            ]
+          ],
+          "spread": [
+            0.32,
+            0.27
+          ],
+          "lum": 0.2,
+          "shape": "ellipse"
+        }
+      ],
+      "retouch": [
+        [
+          0.555,
+          0.29,
+          0.035,
+          0.05
+        ],
+        [
+          0.335,
+          0.42,
+          0.055,
+          0.085
+        ],
+        [
+          0.705,
+          0.38,
+          0.035,
+          0.022
+        ],
+        [
+          0.72,
+          0.43,
+          0.035,
+          0.05
+        ],
+        [
+          0.455,
+          0.275,
+          0.035,
+          0.05
+        ]
+      ],
+      "notes": "Galley 2 Harmony of the Seas 2026 (main galley of a cruise ship) · taken 24 February 2026 · cooks seen from behind, the profile of the far cook blurred · wine box label, cleaning bottle label, hand-washing sign and a paper notice blurred"
+    },
+    {
+      "slug": "dairy-line",
+      "raw": "assets-src/raw/dairy-line.jpg",
+      "crop": [
+        0.12,
+        0.1,
+        0.88,
+        0.82
+      ],
+      "alt": "Inside a small dairy: a stainless-steel rotary cup filling machine behind glass guards, with a hopper on top and an empty outfeed conveyor leading out to the right, a cheese vat and mixing tank beside it and a green resin floor.",
+      "subject": "Dairy cup filling machine with an empty outfeed conveyor",
+      "focal": [
+        0.55,
+        0.5
+      ],
+      "quiet": [
+        "top"
+      ],
+      "people": "none",
+      "tags": [
+        "modern",
+        "interior",
+        "dairy",
+        "food-production",
+        "filling-machine",
+        "conveyor",
+        "stainless-steel",
+        "north-macedonia"
+      ],
+      "credit": {
+        "author": "Македонец",
+        "source": "Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File:%D0%9C%D0%BB%D0%B5%D0%BA%D0%B0%D1%80%D0%BD%D0%B8%D1%86%D0%B0_%E2%80%9E%D0%9E%D1%81%D0%BE%D0%B3%D0%BE%D0%B2%D0%BE_%D0%9C%D0%B8%D0%BB%D0%BA%E2%80%9C_13.jpg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "rois": [
+        {
+          "key": "outfeed-empty",
+          "kind": "thermal",
+          "subject": "Empty outfeed conveyor at the exit of the cup filler",
+          "suggestion": "Filler stopped, no cups on the outfeed",
+          "box": [
+            0.545,
+            0.427,
+            0.409,
+            0.402
+          ],
+          "hot": [
+            [
+              0.56,
+              0.51,
+              1
+            ],
+            [
+              0.335,
+              0.515,
+              0.7
+            ]
+          ],
+          "spread": [
+            0.35,
+            0.22
+          ],
+          "lum": 0.3,
+          "shape": "ellipse"
+        }
+      ],
+      "retouch": [
+        [
+          0.79,
+          0.355,
+          0.06,
+          0.06
+        ],
+        [
+          0.86,
+          0.64,
+          0.04,
+          0.03
+        ]
+      ],
+      "notes": "Dairy Osogovo Milk in Sokolarci, North Macedonia (photo 13 of a series) · taken 2 March 2017 · no people · machine label and a conveyor sticker blurred"
+    },
+    {
+      "slug": "cow-barn",
+      "raw": "assets-src/raw/cow-barn.jpg",
+      "crop": [
+        0,
+        0.04,
+        1,
+        0.94
+      ],
+      "alt": "Two Holstein dairy cows lying in deep straw in a barn pen: one in front resting with her head up and looking at the camera, and behind her a second cow lying flat with her head down on the straw against the steel pen walls.",
+      "subject": "Dairy cows in a straw pen, one lying flat behind",
+      "focal": [
+        0.45,
+        0.55
+      ],
+      "quiet": [
+        "top"
+      ],
+      "people": "none",
+      "tags": [
+        "modern",
+        "interior",
+        "farm",
+        "dairy-cows",
+        "barn",
+        "animal-welfare",
+        "belgium"
+      ],
+      "credit": {
+        "author": "European Commission Audiovisual Service, photo by Lukasz Kobus",
+        "source": "Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File:Dairy_farm_(P-062705-00-03).jpg",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "rois": [
+        {
+          "key": "cow-lying",
+          "kind": "thermal",
+          "subject": "Cow lying in the straw, apart from the others",
+          "suggestion": "Cow lying down for 3 hours",
+          "box": [
+            0.1,
+            0.2,
+            0.62,
+            0.76
+          ],
+          "hot": [
+            [
+              0.5,
+              0.47,
+              1
+            ],
+            [
+              0.36,
+              0.66,
+              0.6
+            ]
+          ],
+          "spread": [
+            0.32,
+            0.3
+          ],
+          "lum": 0.3,
+          "shape": "ellipse"
+        }
+      ],
+      "retouch": [
+        [
+          0.509,
+          0.39,
+          0.043,
+          0.055
+        ],
+        [
+          0.785,
+          0.37,
+          0.042,
+          0.08
+        ]
+      ],
+      "notes": "Dairy farm (P-062705-00-03), European Commission Audiovisual Service, Belgian dairy farm · taken 19 December 2023 · ear-tag numbers blurred"
+    },
+    {
+      "slug": "farm-gate",
+      "raw": "assets-src/raw/farm-gate.jpg",
+      "crop": [
+        0,
+        0.13,
+        1,
+        0.8
+      ],
+      "alt": "A field entrance beside a country road: the galvanised field gate stands swung wide open next to its post, a muddy track with a large puddle leads through the gap into the pasture, and a flock of sheep grazes on the rising field beyond.",
+      "subject": "Pasture gate standing open onto the road with sheep in the field",
+      "focal": [
+        0.65,
+        0.42
+      ],
+      "quiet": [
+        "bottom"
+      ],
+      "people": "none",
+      "tags": [
+        "modern",
+        "exterior",
+        "farm",
+        "pasture",
+        "gate",
+        "sheep",
+        "road",
+        "scotland"
+      ],
+      "credit": {
+        "author": "Jim Smillie",
+        "source": "Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File:Sheep_in_field_with_open_gate_-_geograph.org.uk_-_8289971.jpg",
+        "license": "CC BY-SA 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/"
+      },
+      "rois": [
+        {
+          "key": "gate-open",
+          "kind": "thermal",
+          "subject": "Field gate swung open at the road entrance to the sheep pasture",
+          "suggestion": "Pasture gate left open onto the road",
+          "box": [
+            0.6,
+            0.15,
+            0.36,
+            0.55
+          ],
+          "hot": [
+            [
+              0.47,
+              0.49,
+              1
+            ]
+          ],
+          "spread": [
+            0.28,
+            0.3
+          ],
+          "lum": 0.15,
+          "shape": "ellipse"
+        }
+      ],
+      "notes": "Sheep in field with open gate (geograph.org.uk 8289971) · taken 8 April 2026 · no people, nothing to blur"
+    }
+  ]
+}

@@ -22,6 +22,7 @@ export function Scene({
   sizes = "(min-width: 1024px) 60vw, 100vw",
   shade,
   mirror,
+  side: sideProp,
 }: {
   slug: string;
   card?: SceneCard;
@@ -36,6 +37,8 @@ export function Scene({
   shade?: string;
   /** show the photograph mirrored left to right (infrared, brackets and card follow) */
   mirror?: boolean;
+  /** which side of the focus object the card sits on (default: the side with more room) */
+  side?: "left" | "right";
 }) {
   const p = getPhoto(slug);
   if (!p) {
@@ -52,7 +55,7 @@ export function Scene({
   // inside the frame at every aspect ratio, so the infrared and the alert are never cropped away.
   const [fx, fy] = box ? [box[0] + box[2] / 2, box[1] + box[3] / 2] : mirror ? [1 - p.focal[0], p.focal[1]] : p.focal;
   const style = { "--ar": (p.width / p.height).toFixed(5), "--fx": fx.toFixed(4), "--fy": fy.toFixed(4) } as CSSProperties;
-  const side = box && box[0] + box[2] / 2 < 0.56 ? "right" : "left";
+  const side = sideProp ?? (box && box[0] + box[2] / 2 < 0.56 ? "right" : "left");
   const anchor = box
     ? ({ "--ax": side === "right" ? box[0] + box[2] * 0.9 : box[0] + box[2] * 0.1, "--ay": box[1] + box[3] * 0.42 } as CSSProperties)
     : undefined;

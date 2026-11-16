@@ -1,0 +1,752 @@
+{
+  "photos": [
+    {
+      "slug": "building-site",
+      "raw": "assets-src/raw/building-site.jpg",
+      "crop": [
+        0,
+        0.05,
+        1,
+        0.8
+      ],
+      "alt": "Fibre-optic cable being laid along a narrow brick street in Amsterdam: a worker in an orange high-visibility jacket and white helmet, seen from behind, stands in a sandy trench along a house wall right beside the bucket of a small yellow tracked excavator, with traffic cones, a red and white barrier and parked bicycles marking off the works.",
+      "subject": "Street worker standing in the trench beside a mini excavator's bucket",
+      "focal": [
+        0.45,
+        0.5
+      ],
+      "quiet": [
+        "left"
+      ],
+      "people": "blurred",
+      "tags": [
+        "modern",
+        "exterior",
+        "construction",
+        "street-works",
+        "excavator",
+        "worker",
+        "ppe",
+        "trench",
+        "netherlands"
+      ],
+      "credit": {
+        "author": "Fons Heijnsbroek",
+        "source": "Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File:-_2024,_photo_of_road_workers,_laying_fiber_optic_cable_in_sidewalk_of_the_Hasebroekstraat_-_neighbourhood_Kinkerbuurt_in_Amsterdam_city_-_street_photography_in_free_images_%26_high_resolutions_by_Dutch_photographer_Fons_Heijnsbroek.tif",
+        "license": "CC0 1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "rois": [
+        {
+          "key": "person-in-reach",
+          "kind": "thermal",
+          "subject": "Worker in helmet and vest standing in the trench, inside the mini digger's reach",
+          "suggestion": "Person inside the digger's reach",
+          "box": [
+            0.24,
+            0.27,
+            0.3,
+            0.7
+          ],
+          "hot": [
+            [
+              0.48,
+              0.47,
+              1
+            ],
+            [
+              0.5,
+              0.33,
+              0.7
+            ]
+          ],
+          "spread": [
+            0.3,
+            0.3
+          ],
+          "lum": 0.3,
+          "shape": "ellipse"
+        }
+      ],
+      "retouch": [
+        [
+          0.33,
+          0.49,
+          0.075,
+          0.105
+        ],
+        [
+          0.845,
+          0.18,
+          0.035,
+          0.07
+        ],
+        [
+          0.875,
+          0.255,
+          0.03,
+          0.1
+        ],
+        [
+          0.625,
+          0.35,
+          0.055,
+          0.075
+        ]
+      ],
+      "notes": "2024 photo of road workers laying fibre optic cable in the sidewalk of the Hasebroekstraat, Kinkerbuurt, Amsterdam · taken 6 March 2024 · TIFF original, Commons JPEG rendering downloaded · fibre company logo on the jacket, a passer-by's face, a street sign and the machine's warning labels blurred"
+    },
+    {
+      "slug": "basement-water",
+      "raw": "assets-src/raw/basement-water.jpg",
+      "crop": [
+        0.04,
+        0.04,
+        0.92,
+        0.96
+      ],
+      "alt": "A shared laundry room in the basement of an older apartment building: five washing machines and dryers stand on a brown tiled floor with a floor drain, pipes run along the whitewashed walls and ceiling, and a yellow hose lies on the floor in front of one of the machines.",
+      "subject": "Shared basement laundry room in an apartment building",
+      "focal": [
+        0.58,
+        0.62
+      ],
+      "quiet": [
+        "top"
+      ],
+      "people": "none",
+      "tags": [
+        "modern",
+        "interior",
+        "basement",
+        "laundry-room",
+        "apartment-building",
+        "water",
+        "leak",
+        "banner"
+      ],
+      "credit": {
+        "author": "Michael Musto",
+        "source": "Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File:Waschmaschinen_in_Waschk%C3%BCche.jpg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "rois": [
+        {
+          "key": "floor-water",
+          "kind": "thermal",
+          "subject": "Tiled floor in front of a washing machine, its hose lying on the floor",
+          "suggestion": "Water spreading across the floor by the washers",
+          "box": [
+            0.413,
+            0.479,
+            0.348,
+            0.417
+          ],
+          "hot": [
+            [
+              0.38,
+              0.56,
+              1
+            ],
+            [
+              0.6,
+              0.68,
+              0.7
+            ]
+          ],
+          "spread": [
+            0.3,
+            0.26
+          ],
+          "lum": 0.2,
+          "shape": "ellipse"
+        }
+      ],
+      "retouch": [
+        [
+          0.266,
+          0.553,
+          0.032,
+          0.026
+        ],
+        [
+          0.393,
+          0.507,
+          0.026,
+          0.022
+        ],
+        [
+          0.5489,
+          0.474,
+          0.0435,
+          0.0313
+        ],
+        [
+          0.4783,
+          0.2083,
+          0.0435,
+          0.0573
+        ],
+        [
+          0.0163,
+          0.6667,
+          0.0435,
+          0.0313
+        ],
+        [
+          0.8533,
+          0.6094,
+          0.0489,
+          0.0313
+        ]
+      ],
+      "notes": "Waschmaschinen in Waschküche, the shared basement laundry room of an older apartment building · taken 25 August 2021 · appliance brand names and the notice on the wall blurred · the water is illustrative: the glow marks where a leak would spread"
+    },
+    {
+      "slug": "boiler-gauges",
+      "raw": "assets-src/raw/boiler-gauges.jpg",
+      "crop": [
+        0,
+        0.1,
+        1,
+        0.82
+      ],
+      "alt": "The heating distribution in the plant room of a school in Lillehammer, Norway: foil-insulated supply and return pipes with circulation pumps, motorised valves and a row of round analogue dial thermometers at eye level.",
+      "subject": "Analogue dial thermometers on the heating pipes of a school plant room",
+      "focal": [
+        0.55,
+        0.62
+      ],
+      "people": "none",
+      "tags": [
+        "modern",
+        "interior",
+        "plant-room",
+        "heating",
+        "gauges",
+        "analogue",
+        "school",
+        "norway"
+      ],
+      "credit": {
+        "author": "Wolfmann",
+        "source": "Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File:Teknisk_rom_(School_build._Lilleh._Norway_2024-09._Mechan._room_Air_ventil._Hot_water_Heat_recov._unit)_varmtvann_isolerte_r%C3%B8r_m%C3%A5lere_termometere_sirkulasjonspumpe_strupeventil_radiatorer_gulvvarme_elkabler_etc_IMG_0350.jpg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "rois": [
+        {
+          "key": "dial-thermometer",
+          "kind": "thermal",
+          "subject": "Analogue dial thermometer on a heating pipe",
+          "suggestion": "Dial read by camera: supply temperature falling",
+          "box": [
+            0.58,
+            0.573,
+            0.17,
+            0.28
+          ],
+          "hot": [
+            0.5,
+            0.48
+          ],
+          "spread": [
+            0.36,
+            0.36
+          ],
+          "lum": 0.3,
+          "shape": "ellipse"
+        }
+      ],
+      "retouch": [
+        [
+          0.128,
+          0.39,
+          0.034,
+          0.098
+        ],
+        [
+          0.245,
+          0.39,
+          0.034,
+          0.098
+        ],
+        [
+          0.498,
+          0.183,
+          0.04,
+          0.11
+        ],
+        [
+          0.885,
+          0.018,
+          0.035,
+          0.104
+        ],
+        [
+          0.93,
+          0.76,
+          0.065,
+          0.15
+        ],
+        [
+          0.375,
+          0.927,
+          0.035,
+          0.073
+        ],
+        [
+          0.42,
+          0.171,
+          0.035,
+          0.1
+        ],
+        [
+          0.485,
+          0.866,
+          0.05,
+          0.04
+        ],
+        [
+          0.78,
+          0.0,
+          0.035,
+          0.06
+        ],
+        [
+          0.34,
+          0.128,
+          0.03,
+          0.035
+        ],
+        [
+          0.675,
+          0.012,
+          0.035,
+          0.03
+        ],
+        [
+          0.35,
+          0.591,
+          0.03,
+          0.03
+        ],
+        [
+          0.818,
+          0.52,
+          0.025,
+          0.05
+        ],
+        [
+          0.783,
+          0.448,
+          0.022,
+          0.088
+        ],
+        [
+          0.81,
+          0.49,
+          0.03,
+          0.03
+        ],
+        [
+          0.43,
+          0.433,
+          0.045,
+          0.03
+        ],
+        [
+          0.428,
+          0.508,
+          0.03,
+          0.016
+        ]
+      ],
+      "notes": "Teknisk rom, school building in Lillehammer, Norway, IMG 0350 · taken 24 September 2024 · pump and actuator brand names, pipe labels, tags and certification stickers blurred; the dial scales are kept so the camera reading stays visible"
+    },
+    {
+      "slug": "night-yard",
+      "raw": "assets-src/raw/night-yard.jpg",
+      "crop": [
+        0,
+        0.1,
+        1,
+        0.84
+      ],
+      "alt": "A street works site at night in front of lit apartment blocks: a yellow mini excavator on a trailer, a wheel loader, a compressor and a tipper truck stand parked by the kerb, and two stacked wire mesh cages full of tools, cable and yellow boxes sit on the pavement beside them.",
+      "subject": "Street works site at night with tool cages left on the pavement",
+      "focal": [
+        0.62,
+        0.55
+      ],
+      "quiet": [
+        "bottom"
+      ],
+      "people": "none",
+      "tags": [
+        "modern",
+        "exterior",
+        "night",
+        "construction",
+        "street-works",
+        "machines",
+        "materials",
+        "tools",
+        "after-hours",
+        "banner",
+        "germany"
+      ],
+      "credit": {
+        "author": "PantheraLeo1359531",
+        "source": "Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File:Baustelle_bei_Jahnstra%C3%9Fe_bei_Nacht_20240727_HOF4397_RAW-Export.png",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "rois": [
+        {
+          "key": "tool-cages",
+          "kind": "thermal",
+          "subject": "Two stacked wire mesh cages of tools and cable on the pavement",
+          "suggestion": "Tool cages left out overnight",
+          "box": [
+            0.64,
+            0.33,
+            0.25,
+            0.5
+          ],
+          "hot": [
+            [
+              0.5,
+              0.36,
+              0.8
+            ],
+            [
+              0.5,
+              0.66,
+              1
+            ]
+          ],
+          "spread": [
+            0.42,
+            0.34
+          ],
+          "lum": 0.12,
+          "shape": "ellipse"
+        }
+      ],
+      "retouch": [
+        [
+          0.375,
+          0.235,
+          0.08,
+          0.035
+        ],
+        [
+          0.578,
+          0.41,
+          0.045,
+          0.036
+        ],
+        [
+          0.637,
+          0.398,
+          0.042,
+          0.048
+        ],
+        [
+          0.533,
+          0.532,
+          0.056,
+          0.07
+        ],
+        [
+          0.445,
+          0.532,
+          0.032,
+          0.05
+        ],
+        [
+          0.503,
+          0.603,
+          0.03,
+          0.028
+        ],
+        [
+          0.662,
+          0.648,
+          0.036,
+          0.036
+        ],
+        [
+          0.785,
+          0.524,
+          0.02,
+          0.036
+        ],
+        [
+          0.02,
+          0.425,
+          0.032,
+          0.05
+        ],
+        [
+          0.0,
+          0.435,
+          0.018,
+          0.05
+        ],
+        [
+          0.082,
+          0.492,
+          0.016,
+          0.036
+        ],
+        [
+          0.185,
+          0.476,
+          0.05,
+          0.077
+        ]
+      ],
+      "notes": "Baustelle bei Jahnstraße bei Nacht 20240727 HOF4397 · taken 27 July 2024 at night · PNG original converted to JPEG · machine and contractor logos, a trailer number plate, the compressor model and a shop sign blurred"
+    },
+    {
+      "slug": "site-materials",
+      "raw": "assets-src/raw/site-materials.jpg",
+      "crop": [
+        0,
+        0.22,
+        1,
+        0.78
+      ],
+      "alt": "Large wooden drums of black power cable stand on the gravel pad at the foot of a newly built wind turbine tower in Pougny, France, next to a heap of excavated soil, with farmland and a cloudy sky behind.",
+      "subject": "Drums of power cable left at the foot of a wind turbine",
+      "focal": [
+        0.4,
+        0.62
+      ],
+      "quiet": [
+        "top"
+      ],
+      "people": "none",
+      "tags": [
+        "modern",
+        "exterior",
+        "construction",
+        "materials",
+        "cable-drums",
+        "theft",
+        "wind-farm",
+        "france"
+      ],
+      "credit": {
+        "author": "Cjp24",
+        "source": "Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File:Pougny,_electric_cable_drums_(1).jpg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "rois": [
+        {
+          "key": "cable-drums",
+          "kind": "thermal",
+          "subject": "Drums of black power cable on the gravel",
+          "suggestion": "High-value cable left on site",
+          "box": [
+            0.08,
+            0.308,
+            0.53,
+            0.59
+          ],
+          "hot": [
+            [
+              0.66,
+              0.46,
+              1
+            ],
+            [
+              0.3,
+              0.4,
+              0.7
+            ]
+          ],
+          "spread": [
+            0.32,
+            0.3
+          ],
+          "lum": -0.3,
+          "shape": "ellipse"
+        }
+      ],
+      "retouch": [
+        [
+          0.12,
+          0.37,
+          0.026,
+          0.225
+        ],
+        [
+          0.22,
+          0.635,
+          0.04,
+          0.085
+        ],
+        [
+          0.238,
+          0.71,
+          0.04,
+          0.08
+        ],
+        [
+          0.255,
+          0.78,
+          0.04,
+          0.075
+        ],
+        [
+          0.223,
+          0.595,
+          0.02,
+          0.045
+        ],
+        [
+          0.292,
+          0.685,
+          0.014,
+          0.035
+        ],
+        [
+          0.272,
+          0.343,
+          0.05,
+          0.06
+        ],
+        [
+          0.362,
+          0.347,
+          0.024,
+          0.042
+        ],
+        [
+          0.228,
+          0.325,
+          0.016,
+          0.03
+        ],
+        [
+          0.678,
+          0.645,
+          0.042,
+          0.07
+        ],
+        [
+          0.728,
+          0.698,
+          0.052,
+          0.068
+        ],
+        [
+          0.808,
+          0.58,
+          0.022,
+          0.034
+        ],
+        [
+          0.6,
+          0.301,
+          0.025,
+          0.077
+        ]
+      ],
+      "notes": "Pougny, electric cable drums (1) · taken 29 November 2018 at the Pougny wind farm, Nièvre, France · cable maker labels on the drums and the stickers on the tower door blurred"
+    },
+    {
+      "slug": "weather-roof",
+      "raw": "assets-src/raw/weather-roof.jpg",
+      "crop": [
+        0,
+        0.18,
+        1,
+        0.82
+      ],
+      "alt": "Heavy wet snow sliding off the tiled roof of a brick apartment building: a thick slab has crept over the eaves and hangs in a curling lip above a row of windows, with more snow still on the roof above and chimneys against a grey-blue sky.",
+      "subject": "Snow slab hanging over the eaves of an apartment building",
+      "focal": [
+        0.6,
+        0.55
+      ],
+      "quiet": [
+        "top"
+      ],
+      "people": "non-identifiable",
+      "tags": [
+        "modern",
+        "exterior",
+        "weather",
+        "snow",
+        "roof",
+        "apartment-building",
+        "winter"
+      ],
+      "credit": {
+        "author": "Basotxerri",
+        "source": "Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File:Roof_avalanche_01.JPG",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "rois": [
+        {
+          "key": "snow-overhang",
+          "kind": "thermal",
+          "subject": "Snow slab curling over the eaves above the windows",
+          "suggestion": "Snow load sliding off the roof edge",
+          "box": [
+            0.36,
+            0.341,
+            0.6,
+            0.439
+          ],
+          "hot": [
+            [
+              0.42,
+              0.55,
+              1
+            ],
+            [
+              0.7,
+              0.5,
+              0.7
+            ]
+          ],
+          "spread": [
+            0.34,
+            0.3
+          ],
+          "lum": 0.5,
+          "shape": "ellipse"
+        }
+      ],
+      "retouch": [
+        [
+          0.155,
+          0.22,
+          0.07,
+          0.11
+        ],
+        [
+          0.57,
+          0.866,
+          0.035,
+          0.098
+        ]
+      ],
+      "notes": "Roof avalanche 01 · taken 8 February 2015 · brand name on the satellite dish blurred; a resident partly visible behind a window blurred"
+    }
+  ]
+}

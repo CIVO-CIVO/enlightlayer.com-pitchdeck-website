@@ -2,22 +2,22 @@ import type { LucideIcon } from "lucide-react";
 import {
   ArrowRight,
   Building2,
-  ChefHat,
   CircleParking,
-  Dumbbell,
   Factory,
   Flame,
   HardHat,
-  House,
   Luggage,
   Moon,
+  Package,
+  PawPrint,
+  PlugZap,
   Recycle,
-  Refrigerator,
+  Sailboat,
   School,
   ShoppingBag,
-  Snowflake,
   SprayCan,
   Sprout,
+  Tent,
   Tractor,
   Warehouse,
   WashingMachine,
@@ -37,18 +37,18 @@ const ICON: Record<string, LucideIcon> = {
   farms: Tractor,
   selfservice: WashingMachine,
   night: Moon,
-  cold: Refrigerator,
-  kitchen: ChefHat,
-  cabins: House,
-  icicles: Snowflake,
   recycling: Recycle,
   parking: CircleParking,
-  gym: Dumbbell,
   school: School,
   lobby: Luggage,
   heritage: Flame,
   graffiti: SprayCan,
   greenhouse: Sprout,
+  boat: Sailboat,
+  chargers: PlugZap,
+  selfstorage: Package,
+  stable: PawPrint,
+  campsite: Tent,
 };
 
 type Place = { id: string; name: string; photo: string; items: readonly string[]; main?: boolean };
@@ -58,14 +58,31 @@ const SHADE =
   "linear-gradient(0deg, rgba(18,18,17,1) 0%, rgba(18,18,17,.6) 24%, rgba(18,18,17,0) 52%), linear-gradient(180deg, rgba(18,18,17,.5) 0%, rgba(18,18,17,0) 22%)";
 
 /** A kind of place as a photo card: the problem marked in the photograph, the examples over the bottom. */
-function PlaceCard({ p, n, big, className, sizes }: { p: Place; n: number; big?: boolean; className?: string; sizes: string }) {
-  const Icon = ICON[p.id];
+export function PlaceCard({
+  p,
+  n,
+  big,
+  className,
+  sizes,
+  icon,
+  href,
+}: {
+  p: Place;
+  n: number;
+  big?: boolean;
+  className?: string;
+  sizes: string;
+  icon?: LucideIcon;
+  href?: string;
+}) {
+  const Icon = icon ?? ICON[p.id];
   return (
     <li
       className={cx("rise relative min-h-[250px] overflow-hidden rounded-[14px] bg-night text-white lg:min-h-0", className)}
       style={{ "--d": n } as React.CSSProperties}
     >
       <Scene slug={p.photo} label={null} shade={SHADE} sizes={sizes} className="!absolute inset-x-0 top-0 bottom-[clamp(44px,14%,84px)] w-full" />
+      {href ? <a href={href} aria-label={p.name} className="absolute inset-0 z-[4] rounded-[14px]" /> : null}
       <p className="t-label absolute top-[clamp(10px,1.6vh,16px)] left-[clamp(12px,1.3vw,20px)] z-[3] flex items-center gap-2.5 text-white/75">
         <span className="tabular-nums">{pad(n)}</span>
         {p.main ? <span className="rounded-[3px] bg-orange px-1.5 py-[3px] text-white">Main focus</span> : null}

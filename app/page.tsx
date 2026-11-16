@@ -4,10 +4,12 @@ import { Fragment } from "react";
 import { Deck, type SlideMeta } from "@/components/Deck";
 import type { Tone } from "@/components/Slide";
 import { Area } from "@/components/slides/Area";
-import { Ideas, MoreIdeas } from "@/components/slides/Ideas";
 import { Contact, Deploy, Market, Trust } from "@/components/slides/Closing";
-import { Cover, Flagship, Focus, Problem, Solution } from "@/components/slides/Opening";
-import { FLAGSHIP, GROUPS, IDEAS, MORE_IDEAS } from "@/content/deck";
+import { Ideas, MoreIdeas } from "@/components/slides/Ideas";
+import { Cover, Flagship, Problem, Solution } from "@/components/slides/Opening";
+import { Overview } from "@/components/slides/Overview";
+import { Why } from "@/components/slides/Why";
+import { CONTACT, DEPLOY, FLAGSHIP, FOCUS, GROUPS, IDEAS, MORE_IDEAS, WHY } from "@/content/deck";
 
 const PDF = "/enlight-layer-pitch.pdf";
 
@@ -20,7 +22,8 @@ const SLIDES: Entry[] = [
   { id: "solution", label: "What we do", tone: "paper-2", render: (n) => <Solution n={n} /> },
   { id: "problem", label: "The problem", tone: "paper", render: (n) => <Problem n={n} /> },
   { id: "ideas", label: IDEAS.kicker, tone: "paper-2", render: (n) => <Ideas n={n} /> },
-  { id: "services", label: "Our services", tone: "dark", render: (n) => <Focus n={n} /> },
+  { id: "why", label: WHY.kicker, tone: "dark", render: (n) => <Why n={n} /> },
+  { id: "services", label: FOCUS.kicker, tone: "paper-2", render: (n) => <Overview n={n} /> },
   { id: "old-equipment", label: FLAGSHIP.kicker, tone: "paper", render: (n) => <Flagship n={n} /> },
   // the first area continues "Where we start": same look, labelled 2/2
   ...GROUPS.map((g, k): Entry => ({
@@ -29,11 +32,11 @@ const SLIDES: Entry[] = [
     tone: AREA_TONES[k],
     render: (n) => <Area n={n} group={g} tone={AREA_TONES[k]} label={k === 0 ? `${FLAGSHIP.kicker} · 2/2 · ${g.name}` : undefined} />,
   })),
-  { id: "deployment", label: "How it's deployed", tone: "paper-2", render: (n) => <Deploy n={n} /> },
-  { id: "trust", label: "Privacy and safety", tone: "dark", render: (n) => <Trust n={n} /> },
+  { id: "deployment", label: DEPLOY.kicker, tone: "dark", render: (n) => <Deploy n={n} /> },
   { id: "market", label: "Market", tone: "paper", render: (n) => <Market n={n} /> },
+  { id: "trust", label: "Privacy and safety", tone: "dark", render: (n) => <Trust n={n} /> },
   { id: "more-ideas", label: MORE_IDEAS.kicker, tone: "paper-2", render: (n) => <MoreIdeas n={n} /> },
-  { id: "contact", label: "Contact", tone: "dark", render: (n, pdf) => <Contact n={n} pdf={pdf} /> },
+  { id: "contact", label: CONTACT.kicker, tone: "dark", render: (n, pdf) => <Contact n={n} pdf={pdf} /> },
 ];
 
 export default function Page() {

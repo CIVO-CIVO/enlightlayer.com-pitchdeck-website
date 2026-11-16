@@ -3,6 +3,377 @@
 import type { Photo } from "./photos.types";
 
 export const photos = {
+  "building-site": {
+    "slug": "building-site",
+    "src": "/img/photo/building-site.jpg",
+    "thumb": "/img/thumb/building-site.jpg",
+    "width": 2048,
+    "height": 1239,
+    "alt": "Fibre-optic cable being laid along a narrow brick street in Amsterdam: a worker in an orange high-visibility jacket and white helmet, seen from behind, stands in a sandy trench along a house wall right beside the bucket of a small yellow tracked excavator, with traffic cones, a red and white barrier and parked bicycles marking off the works.",
+    "subject": "Street worker standing in the trench beside a mini excavator's bucket",
+    "tone": "dark",
+    "focal": [0.45, 0.5],
+    "quiet": ["left"],
+    "rois": [
+      {
+        "key": "person-in-reach",
+        "box": [0.24023, 0.27038, 0.2998, 0.69976],
+        "kind": "thermal",
+        "overlay": "/img/ir/building-site--person-in-reach.webp",
+        "subject": "Worker in helmet and vest standing in the trench, inside the mini digger's reach",
+        "suggestion": "Person inside the digger's reach"
+      }
+    ],
+    "credit": {
+      "author": "Fons Heijnsbroek",
+      "source": "Wikimedia Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:-_2024,_photo_of_road_workers,_laying_fiber_optic_cable_in_sidewalk_of_the_Hasebroekstraat_-_neighbourhood_Kinkerbuurt_in_Amsterdam_city_-_street_photography_in_free_images_%26_high_resolutions_by_Dutch_photographer_Fons_Heijnsbroek.tif",
+      "license": "CC0 1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+    },
+    "people": "blurred",
+    "tags": ["modern", "exterior", "construction", "street-works", "excavator", "worker", "ppe", "trench", "netherlands"]
+  },
+  "basement-water": {
+    "slug": "basement-water",
+    "src": "/img/photo/basement-water.jpg",
+    "thumb": "/img/thumb/basement-water.jpg",
+    "width": 2048,
+    "height": 1202,
+    "alt": "A shared laundry room in the basement of an older apartment building: five washing machines and dryers stand on a brown tiled floor with a floor drain, pipes run along the whitewashed walls and ceiling, and a yellow hose lies on the floor in front of one of the machines.",
+    "subject": "Shared basement laundry room in an apartment building",
+    "tone": "mid",
+    "focal": [0.58, 0.62],
+    "quiet": ["top"],
+    "rois": [
+      {
+        "key": "floor-water",
+        "box": [0.41309, 0.4792, 0.34814, 0.41681],
+        "kind": "thermal",
+        "overlay": "/img/ir/basement-water--floor-water.webp",
+        "subject": "Tiled floor in front of a washing machine, its hose lying on the floor",
+        "suggestion": "Water spreading across the floor by the washers"
+      }
+    ],
+    "credit": {
+      "author": "Michael Musto",
+      "source": "Wikimedia Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:Waschmaschinen_in_Waschk%C3%BCche.jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    "people": "none",
+    "tags": ["modern", "interior", "basement", "laundry-room", "apartment-building", "water", "leak", "banner"]
+  },
+  "boiler-gauges": {
+    "slug": "boiler-gauges",
+    "src": "/img/photo/boiler-gauges.jpg",
+    "thumb": "/img/thumb/boiler-gauges.jpg",
+    "width": 2048,
+    "height": 1260,
+    "alt": "The heating distribution in the plant room of a school in Lillehammer, Norway: foil-insulated supply and return pipes with circulation pumps, motorised valves and a row of round analogue dial thermometers at eye level.",
+    "subject": "Analogue dial thermometers on the heating pipes of a school plant room",
+    "tone": "mid",
+    "focal": [0.55, 0.62],
+    "rois": [
+      {
+        "key": "dial-thermometer",
+        "box": [0.58008, 0.57302, 0.16992, 0.28016],
+        "kind": "thermal",
+        "overlay": "/img/ir/boiler-gauges--dial-thermometer.webp",
+        "subject": "Analogue dial thermometer on a heating pipe",
+        "suggestion": "Dial read by camera: supply temperature falling"
+      }
+    ],
+    "credit": {
+      "author": "Wolfmann",
+      "source": "Wikimedia Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:Teknisk_rom_(School_build._Lilleh._Norway_2024-09._Mechan._room_Air_ventil._Hot_water_Heat_recov._unit)_varmtvann_isolerte_r%C3%B8r_m%C3%A5lere_termometere_sirkulasjonspumpe_strupeventil_radiatorer_gulvvarme_elkabler_etc_IMG_0350.jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    "people": "none",
+    "tags": ["modern", "interior", "plant-room", "heating", "gauges", "analogue", "school", "norway"]
+  },
+  "night-yard": {
+    "slug": "night-yard",
+    "src": "/img/photo/night-yard.jpg",
+    "thumb": "/img/thumb/night-yard.jpg",
+    "width": 2048,
+    "height": 1147,
+    "alt": "A street works site at night in front of lit apartment blocks: a yellow mini excavator on a trailer, a wheel loader, a compressor and a tipper truck stand parked by the kerb, and two stacked wire mesh cages full of tools, cable and yellow boxes sit on the pavement beside them.",
+    "subject": "Street works site at night with tool cages left on the pavement",
+    "tone": "mid",
+    "focal": [0.62, 0.55],
+    "quiet": ["bottom"],
+    "rois": [
+      {
+        "key": "tool-cages",
+        "box": [0.64014, 0.33043, 0.25, 0.50044],
+        "kind": "thermal",
+        "overlay": "/img/ir/night-yard--tool-cages.webp",
+        "subject": "Two stacked wire mesh cages of tools and cable on the pavement",
+        "suggestion": "Tool cages left out overnight"
+      }
+    ],
+    "credit": {
+      "author": "PantheraLeo1359531",
+      "source": "Wikimedia Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:Baustelle_bei_Jahnstra%C3%9Fe_bei_Nacht_20240727_HOF4397_RAW-Export.png",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "people": "none",
+    "tags": ["modern", "exterior", "night", "construction", "street-works", "machines", "materials", "tools", "after-hours", "banner", "germany"]
+  },
+  "site-materials": {
+    "slug": "site-materials",
+    "src": "/img/photo/site-materials.jpg",
+    "thumb": "/img/thumb/site-materials.jpg",
+    "width": 2048,
+    "height": 1198,
+    "alt": "Large wooden drums of black power cable stand on the gravel pad at the foot of a newly built wind turbine tower in Pougny, France, next to a heap of excavated soil, with farmland and a cloudy sky behind.",
+    "subject": "Drums of power cable left at the foot of a wind turbine",
+    "tone": "light",
+    "focal": [0.4, 0.62],
+    "quiet": ["top"],
+    "rois": [
+      {
+        "key": "cable-drums",
+        "box": [0.08008, 0.30801, 0.52979, 0.59015],
+        "kind": "thermal",
+        "overlay": "/img/ir/site-materials--cable-drums.webp",
+        "subject": "Drums of black power cable on the gravel",
+        "suggestion": "High-value cable left on site"
+      }
+    ],
+    "credit": {
+      "author": "Cjp24",
+      "source": "Wikimedia Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:Pougny,_electric_cable_drums_(1).jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    "people": "none",
+    "tags": ["modern", "exterior", "construction", "materials", "cable-drums", "theft", "wind-farm", "france"]
+  },
+  "weather-roof": {
+    "slug": "weather-roof",
+    "src": "/img/photo/weather-roof.jpg",
+    "thumb": "/img/thumb/weather-roof.jpg",
+    "width": 2048,
+    "height": 1260,
+    "alt": "Heavy wet snow sliding off the tiled roof of a brick apartment building: a thick slab has crept over the eaves and hangs in a curling lip above a row of windows, with more snow still on the roof above and chimneys against a grey-blue sky.",
+    "subject": "Snow slab hanging over the eaves of an apartment building",
+    "tone": "mid",
+    "focal": [0.6, 0.55],
+    "quiet": ["top"],
+    "rois": [
+      {
+        "key": "snow-overhang",
+        "box": [0.35986, 0.34127, 0.6001, 0.43889],
+        "kind": "thermal",
+        "overlay": "/img/ir/weather-roof--snow-overhang.webp",
+        "subject": "Snow slab curling over the eaves above the windows",
+        "suggestion": "Snow load sliding off the roof edge"
+      }
+    ],
+    "credit": {
+      "author": "Basotxerri",
+      "source": "Wikimedia Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:Roof_avalanche_01.JPG",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    "people": "non-identifiable",
+    "tags": ["modern", "exterior", "weather", "snow", "roof", "apartment-building", "winter"]
+  },
+  "apartments-common": {
+    "slug": "apartments-common",
+    "src": "/img/photo/apartments-common.jpg",
+    "thumb": "/img/thumb/apartments-common.jpg",
+    "width": 2048,
+    "height": 1319,
+    "alt": "The shared bin room of an apartment building: a row of green wheelie bins and recycling containers along a concrete wall, the paper container heaped over the rim with flattened cardboard and bags, more cardboard and a black rubbish bag dumped on the floor beside it, and a dark door at the back.",
+    "subject": "Apartment building bin room with an overflowing paper container",
+    "tone": "mid",
+    "focal": [0.32, 0.5],
+    "quiet": ["bottom"],
+    "rois": [
+      {
+        "key": "bins-overflow",
+        "box": [0.02881, 0.30023, 0.61328, 0.50038],
+        "kind": "thermal",
+        "overlay": "/img/ir/apartments-common--bins-overflow.webp",
+        "subject": "Paper container heaped over the rim, cardboard left beside the bins",
+        "suggestion": "Bin room overflowing, rubbish left on the floor"
+      }
+    ],
+    "credit": {
+      "author": "Alicia Fagerving",
+      "source": "Wikimedia Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:Soprum.jpg",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/"
+    },
+    "people": "none",
+    "tags": ["modern", "interior", "residential", "apartment-building", "common-area", "bin-room", "waste", "sweden"]
+  },
+  "carwash": {
+    "slug": "carwash",
+    "src": "/img/photo/carwash.jpg",
+    "thumb": "/img/thumb/carwash.jpg",
+    "width": 2048,
+    "height": 1143,
+    "alt": "A modern self-service car wash with jet-wash bays under a long canopy: a silver saloon stands parked in one bay with no one washing it, and in the next bay a dark saloon covered in foam is being sprayed with a lance, with wet foam spreading across the paved forecourt.",
+    "subject": "Self-service car wash bays with a car parked in one bay",
+    "tone": "mid",
+    "focal": [0.45, 0.45],
+    "quiet": ["bottom"],
+    "rois": [
+      {
+        "key": "bay-blocked",
+        "box": [0.1001, 0.18023, 0.35986, 0.55031],
+        "kind": "thermal",
+        "overlay": "/img/ir/carwash--bay-blocked.webp",
+        "subject": "Silver car parked in a wash bay with no wash running",
+        "suggestion": "Car parked in a wash bay, no wash running"
+      }
+    ],
+    "credit": {
+      "author": "Андрей Романенко",
+      "source": "Wikimedia Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:ADRI_self-service_car_wash_in_Jelgava.jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    "people": "non-identifiable",
+    "tags": ["modern", "exterior", "self-service", "car-wash", "unstaffed", "vehicles", "latvia"]
+  },
+  "restaurant-cold": {
+    "slug": "restaurant-cold",
+    "src": "/img/photo/restaurant-cold.jpg",
+    "thumb": "/img/thumb/restaurant-cold.jpg",
+    "width": 2048,
+    "height": 1365,
+    "alt": "A large stainless-steel commercial kitchen: prep tables in the foreground with trays of food under cling film, a big stock pot on the tiled floor, tilting kettles under extraction hoods, and two cooks in white jackets and hats working at the back.",
+    "subject": "Commercial kitchen with covered trays left on the prep tables",
+    "tone": "mid",
+    "focal": [0.55, 0.55],
+    "quiet": ["top"],
+    "rois": [
+      {
+        "key": "tray-out",
+        "box": [0.6001, 0.4, 0.37988, 0.50037],
+        "kind": "thermal",
+        "overlay": "/img/ir/restaurant-cold--tray-out.webp",
+        "subject": "Covered food tray standing on the prep table outside the cold room",
+        "suggestion": "Tray out of the fridge for 2 hours"
+      }
+    ],
+    "credit": {
+      "author": "Larry D. Moore",
+      "source": "Wikimedia Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:Galley_2_Harmony_of_the_Seas_2026.jpg",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "people": "blurred",
+    "tags": ["modern", "interior", "kitchen", "commercial-kitchen", "food-safety", "stainless-steel", "hygiene"]
+  },
+  "dairy-line": {
+    "slug": "dairy-line",
+    "src": "/img/photo/dairy-line.jpg",
+    "thumb": "/img/thumb/dairy-line.jpg",
+    "width": 2048,
+    "height": 1264,
+    "alt": "Inside a small dairy: a stainless-steel rotary cup filling machine behind glass guards, with a hopper on top and an empty outfeed conveyor leading out to the right, a cheese vat and mixing tank beside it and a green resin floor.",
+    "subject": "Dairy cup filling machine with an empty outfeed conveyor",
+    "tone": "mid",
+    "focal": [0.55, 0.5],
+    "quiet": ["top"],
+    "rois": [
+      {
+        "key": "outfeed-empty",
+        "box": [0.54492, 0.42722, 0.40918, 0.4019],
+        "kind": "thermal",
+        "overlay": "/img/ir/dairy-line--outfeed-empty.webp",
+        "subject": "Empty outfeed conveyor at the exit of the cup filler",
+        "suggestion": "Filler stopped, no cups on the outfeed"
+      }
+    ],
+    "credit": {
+      "author": "Македонец",
+      "source": "Wikimedia Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:%D0%9C%D0%BB%D0%B5%D0%BA%D0%B0%D1%80%D0%BD%D0%B8%D1%86%D0%B0_%E2%80%9E%D0%9E%D1%81%D0%BE%D0%B3%D0%BE%D0%B2%D0%BE_%D0%9C%D0%B8%D0%BB%D0%BA%E2%80%9C_13.jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    "people": "none",
+    "tags": ["modern", "interior", "dairy", "food-production", "filling-machine", "conveyor", "stainless-steel", "north-macedonia"]
+  },
+  "cow-barn": {
+    "slug": "cow-barn",
+    "src": "/img/photo/cow-barn.jpg",
+    "thumb": "/img/thumb/cow-barn.jpg",
+    "width": 2048,
+    "height": 1283,
+    "alt": "Two Holstein dairy cows lying in deep straw in a barn pen: one in front resting with her head up and looking at the camera, and behind her a second cow lying flat with her head down on the straw against the steel pen walls.",
+    "subject": "Dairy cows in a straw pen, one lying flat behind",
+    "tone": "mid",
+    "focal": [0.45, 0.55],
+    "quiet": ["top"],
+    "rois": [
+      {
+        "key": "cow-lying",
+        "box": [0.1001, 0.20031, 0.62012, 0.75994],
+        "kind": "thermal",
+        "overlay": "/img/ir/cow-barn--cow-lying.webp",
+        "subject": "Cow lying in the straw, apart from the others",
+        "suggestion": "Cow lying down for 3 hours"
+      }
+    ],
+    "credit": {
+      "author": "European Commission Audiovisual Service, photo by Lukasz Kobus",
+      "source": "Wikimedia Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:Dairy_farm_(P-062705-00-03).jpg",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "people": "none",
+    "tags": ["modern", "interior", "farm", "dairy-cows", "barn", "animal-welfare", "belgium"]
+  },
+  "farm-gate": {
+    "slug": "farm-gate",
+    "src": "/img/photo/farm-gate.jpg",
+    "thumb": "/img/thumb/farm-gate.jpg",
+    "width": 2048,
+    "height": 1229,
+    "alt": "A field entrance beside a country road: the galvanised field gate stands swung wide open next to its post, a muddy track with a large puddle leads through the gap into the pasture, and a flock of sheep grazes on the rising field beyond.",
+    "subject": "Pasture gate standing open onto the road with sheep in the field",
+    "tone": "mid",
+    "focal": [0.65, 0.42],
+    "quiet": ["bottom"],
+    "rois": [
+      {
+        "key": "gate-open",
+        "box": [0.6001, 0.14972, 0.35986, 0.55004],
+        "kind": "thermal",
+        "overlay": "/img/ir/farm-gate--gate-open.webp",
+        "subject": "Field gate swung open at the road entrance to the sheep pasture",
+        "suggestion": "Pasture gate left open onto the road"
+      }
+    ],
+    "credit": {
+      "author": "Jim Smillie",
+      "source": "Wikimedia Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:Sheep_in_field_with_open_gate_-_geograph.org.uk_-_8289971.jpg",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/"
+    },
+    "people": "none",
+    "tags": ["modern", "exterior", "farm", "pasture", "gate", "sheep", "road", "scotland"]
+  },
   "idea-site": {
     "slug": "idea-site",
     "src": "/img/photo/idea-site.jpg",
