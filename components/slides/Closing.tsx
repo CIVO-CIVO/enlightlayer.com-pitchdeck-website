@@ -128,7 +128,7 @@ export function Market({ n }: { n: number }) {
             ))}
           </ul>
           <p className="muted mt-5 max-w-[34rem] text-[13.5px] leading-snug">
-            Customer types the services are built for — not a list of customers. Every project is a custom solution for one company.
+            Customer types the services are built for, not a list of customers. Every project is a custom solution for one company.
           </p>
         </section>
       </div>

@@ -219,7 +219,7 @@ export function Deck({ slides, pdf, children }: { slides: SlideMeta[]; pdf?: str
         )}
       >
         <div className="flex h-[var(--hdr)] items-center justify-between gap-4 px-[var(--gutter)]">
-          <a href={`#${slides[0].id}`} aria-label="Enlight Layer — first slide" className="rounded-[4px]">
+          <a href={`#${slides[0].id}`} aria-label="Enlight Layer, first slide" className="rounded-[4px]">
             <Logo tone={dark ? "white" : "ink"} />
           </a>
           <p className={cx("t-label hidden lg:block", dark ? "text-white/55" : "text-muted")} aria-hidden>

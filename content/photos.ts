@@ -517,7 +517,7 @@ export const photos = {
       }
     ],
     "credit": {
-      "author": "U.S. Department of Agriculture — Bob Nichols",
+      "author": "U.S. Department of Agriculture, photo by Bob Nichols",
       "source": "Wikimedia Commons",
       "url": "https://commons.wikimedia.org/wiki/File:20130822-OC-RBN-2946_(9682285758).jpg",
       "license": "Public domain (U.S. Department of Agriculture work)",
@@ -548,7 +548,7 @@ export const photos = {
       }
     ],
     "credit": {
-      "author": "U.S. Forest Service, Intermountain Region — Cody Allred",
+      "author": "U.S. Forest Service, Intermountain Region, photo by Cody Allred",
       "source": "Wikimedia Commons",
       "url": "https://commons.wikimedia.org/wiki/File:2020612-FS-Payette-CLA-004_(50062671462).jpg",
       "license": "Public domain (U.S. Forest Service work)",
@@ -749,7 +749,7 @@ export const photos = {
     "thumb": "/img/thumb/legacy-panels.jpg",
     "width": 2048,
     "height": 1366,
-    "alt": "An early hydropower switchboard of white marble with five analogue meters — volt, ampere and a large kilowatt dial — above rows of rotary switches and enamel labels.",
+    "alt": "An early hydropower switchboard of white marble with five analogue meters (volt, ampere and a large kilowatt dial) above rows of rotary switches and enamel labels.",
     "subject": "Analogue kilowatt, volt and ampere meters on a marble switchboard",
     "tone": "light",
     "focal": [0.5, 0.52],

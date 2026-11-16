@@ -4,9 +4,10 @@ import { Fragment } from "react";
 import { Deck, type SlideMeta } from "@/components/Deck";
 import type { Tone } from "@/components/Slide";
 import { Area } from "@/components/slides/Area";
+import { Ideas } from "@/components/slides/Ideas";
 import { Contact, Deploy, Market, Trust } from "@/components/slides/Closing";
 import { Cover, Flagship, Focus, Problem, Solution } from "@/components/slides/Opening";
-import { FLAGSHIP, GROUPS } from "@/content/deck";
+import { FLAGSHIP, GROUPS, IDEAS } from "@/content/deck";
 
 const PDF = "/enlight-layer-pitch.pdf";
 
@@ -18,6 +19,7 @@ const SLIDES: Entry[] = [
   { id: "cover", label: "Enlight Layer", tone: "dark", render: (n) => <Cover n={n} /> },
   { id: "solution", label: "What we do", tone: "paper-2", render: (n) => <Solution n={n} /> },
   { id: "problem", label: "The problem", tone: "paper", render: (n) => <Problem n={n} /> },
+  { id: "ideas", label: IDEAS.kicker, tone: "paper-2", render: (n) => <Ideas n={n} /> },
   { id: "services", label: "Our services", tone: "dark", render: (n) => <Focus n={n} /> },
   { id: "old-equipment", label: FLAGSHIP.kicker, tone: "paper", render: (n) => <Flagship n={n} /> },
   // the first area continues "Where we start": same look, labelled 2/2

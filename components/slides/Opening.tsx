@@ -110,7 +110,7 @@ export function Problem({ n }: { n: number }) {
           </div>
           <figcaption className="muted mt-3 flex items-center gap-2 text-[13px]">
             <span className="h-1.5 w-1.5 rounded-full bg-orange" aria-hidden />
-            Nine feeds. Four problems in progress — and nobody looking.
+            Nine feeds. Four problems in progress, and nobody looking.
           </figcaption>
         </figure>
       </div>
@@ -129,7 +129,7 @@ export function Solution({ n }: { n: number }) {
             {SOLUTION.text}
           </p>
           <ul className="rise mt-8 grid gap-2.5 text-[15px]" style={{ "--d": 3 } as React.CSSProperties}>
-            {["Custom-built for each problem", "Existing cameras first", "An alert with the picture — not a video wall"].map((t) => (
+            {["Custom-built for each problem", "Existing cameras first", "An alert with the picture, not a video wall"].map((t) => (
               <li key={t} className="flex items-center gap-3">
                 <span className="h-px w-5 bg-current opacity-50" aria-hidden />
                 {t}

@@ -14,7 +14,7 @@ export default function Credits() {
         </a>
         <h1 className="t-title mt-12">Photo credits</h1>
         <p className="t-lead muted mt-4 max-w-[46rem]">
-          Every photograph on this site is openly licensed — public domain, CC0, CC BY or CC BY-SA — and shows a real place that has nothing to do with Enlight
+          Every photograph on this site is openly licensed (public domain, CC0, CC BY or CC BY-SA) and shows a real place that has nothing to do with Enlight
           Layer. We crop them, convert them to grayscale, blur or remove legible faces, plates, logos and lettering, and paint an illustrative infrared
           highlight on top; the highlights are graphics, not measurements. Adaptations of CC BY-SA photographs are shared under the same license.
         </p>

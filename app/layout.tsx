@@ -6,11 +6,11 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-inter", axes: ["opsz
 const mono = JetBrains_Mono({ subsets: ["latin"], variable: "--font-jb-mono", display: "swap" });
 
 const site = process.env.VERCEL_PROJECT_PRODUCTION_URL ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}` : "http://localhost:3200";
-const description = "Custom AI monitoring on cameras and sensors — for the places nobody watches. Europe and North America.";
+const description = "Custom AI monitoring on cameras and sensors, for the places nobody watches. Europe and North America.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(site),
-  title: { default: "Enlight Layer — pitch deck", template: "%s · Enlight Layer" },
+  title: { default: "Enlight Layer · pitch deck", template: "%s · Enlight Layer" },
   description,
   // shared by link, not by search
   robots: { index: false, follow: false, nocache: true, googleBot: { index: false, follow: false } },
