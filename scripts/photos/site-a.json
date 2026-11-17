@@ -45,8 +45,8 @@
         {
           "key": "person-in-reach",
           "kind": "thermal",
-          "subject": "Two workers in helmets and orange vests at the edge of the rebar slab, right above a working excavator's bucket",
-          "suggestion": "Person inside the excavator's reach",
+          "subject": "Two workers in helmets and vests carrying a load at the edge of the rebar slab, beside the active dig",
+          "suggestion": "People at the edge of the dig",
           "box": [
             0.6615,
             0.6782,
@@ -71,7 +71,7 @@
           "key": "open-edge",
           "kind": "thermal",
           "subject": "Two workers on a ledge at the top of the pit wall, beside an unguarded drop",
-          "suggestion": "Person at an unguarded edge",
+          "suggestion": "At height, no guard rail",
           "box": [
             0.5969,
             0.4517,
@@ -185,7 +185,7 @@
           0.0248
         ]
       ],
-      "notes": "Charleroi, Banque de Charleroi pendant les travaux Rive-gauche \u00b7 taken 20 June 2015 \u00b7 Commons 3840 px rendering of the 4697 px original \u00b7 machine brand names, rental stickers, a shoe shop sign, a bank sign, the IFAPME sign and a banner logo blurred; a shop sign at the left edge cropped out"
+      "notes": "Charleroi, Banque de Charleroi pendant les travaux Rive-gauche · taken 20 June 2015 · Commons 3840 px rendering of the 4697 px original · machine brand names, rental stickers, a shoe shop sign, a bank sign, the IFAPME sign and a banner logo blurred; a shop sign at the left edge cropped out"
     },
     {
       "slug": "site-crane",
@@ -321,7 +321,7 @@
           0.0285
         ]
       ],
-      "notes": "Concrete Pours in Amesbury, Whittier Bridge (I-95) northbound span \u00b7 taken 19 January 2015 \u00b7 MassDOT Flickr stream, Commons 3840 px rendering of the 4608 px original \u00b7 contractor and equipment maker names on the gantry, buckets, vests and a machine, plus a road sign, blurred"
+      "notes": "Concrete Pours in Amesbury, Whittier Bridge (I-95) northbound span · taken 19 January 2015 · MassDOT Flickr stream, Commons 3840 px rendering of the 4608 px original · contractor and equipment maker names on the gantry, buckets, vests and a machine, plus a road sign, blurred"
     }
   ]
 }

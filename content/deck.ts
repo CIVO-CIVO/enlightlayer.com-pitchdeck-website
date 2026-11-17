@@ -181,7 +181,7 @@ export const SERVICES: Service[] = [
     senses: ["camera"],
     photo: "site-wide",
     note: "Detects situations, not identities. No face recognition.",
-    card: { meta: "Pit floor · excavator 4", title: "People inside the excavator's reach" },
+    card: { meta: "Pit floor · slab edge", title: "People at the edge of the dig" },
   },
   {
     id: "falls",
@@ -585,7 +585,7 @@ export const SERVICES: Service[] = [
     senses: ["camera"],
     options: ["thermal"],
     photo: "predator-animal",
-    card: { meta: "North pasture · 03:12", title: "Lynx near the flock" },
+    card: { meta: "North pasture · 03:12", title: "Predators near the flock" },
   },
 ];
 
@@ -618,7 +618,7 @@ export const COVER = {
   /** the banner cycles through these scenarios: one service each (place = callout above or below the problem) */
   reel: [
     { service: "building-sites", photo: "site-wide", zoom: 1.6, at: [0.6, 0.58], cam: "CAM 01", clock: "07:42:19", label: "Whole building sites · site overview" },
-    { service: "basement-water", photo: "basement-water", cam: "CAM 04", clock: "02:14:07", label: "Water in the basement · laundry room" },
+    { service: "shop-theft", photo: "self-checkout", cam: "CAM 04", clock: "17:26:40", label: "Shop theft · self-checkout" },
     { service: "robot-cells", photo: "robot-cells", cam: "CAM 06", clock: "10:12:40", label: "Robot & welding cells · weld cell 3" },
     { service: "marinas", photo: "marinas", cam: "CAM 09", clock: "01:32:05", label: "Water after dark · marina" },
     {
@@ -627,7 +627,7 @@ export const COVER = {
       cam: "CAM 05",
       clock: "05:48:12",
       place: "below",
-      card: { meta: "North pasture · forest edge", title: "Lynx near the flock" },
+      card: { meta: "North pasture · forest edge", title: "Predators near the flock" },
       label: "Predator warning · north pasture",
     },
     {
@@ -839,7 +839,7 @@ export const SITE = {
     { title: "Trucks & walkways", text: "People on foot where trucks reverse." },
     { title: "One HSE log", text: "Every deviation with its picture, for the site manager." },
   ],
-  overview: { slug: "site-wide", cam: "CAM 01 · Site overview", tags: ["In the excavator's reach", "At an unguarded edge"] },
+  overview: { slug: "site-wide", cam: "CAM 01 · Site overview", tags: ["At the edge of the dig", "At height, no guard rail"] },
   feeds: [
     { slug: "site-crane", cam: "CAM 02 · Crane", alert: "Person under the load" },
     { slug: "site-ppe", cam: "CAM 03 · Pit north", alert: "No helmet in the zone" },
@@ -848,7 +848,7 @@ export const SITE = {
   ],
   logLabel: "Example log",
   log: [
-    { time: "07:42", text: "In the excavator's reach, pit floor" },
+    { time: "07:42", text: "At the edge of the dig, pit floor" },
     { time: "09:15", text: "No helmet, pit north" },
     { time: "13:02", text: "Under the load, crane" },
     { time: "18:10", text: "Gate left open, gate 1" },

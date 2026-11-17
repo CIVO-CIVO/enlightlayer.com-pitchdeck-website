@@ -1285,8 +1285,8 @@ export const photos = {
         "box": [0.66133, 0.67812, 0.1332, 0.20687],
         "kind": "thermal",
         "overlay": "/img/ir/site-wide--person-in-reach.webp",
-        "subject": "Two workers in helmets and orange vests at the edge of the rebar slab, right above a working excavator's bucket",
-        "suggestion": "Person inside the excavator's reach"
+        "subject": "Two workers in helmets and vests carrying a load at the edge of the rebar slab, beside the active dig",
+        "suggestion": "People at the edge of the dig"
       },
       {
         "key": "open-edge",
@@ -1294,7 +1294,7 @@ export const photos = {
         "kind": "thermal",
         "overlay": "/img/ir/site-wide--open-edge.webp",
         "subject": "Two workers on a ledge at the top of the pit wall, beside an unguarded drop",
-        "suggestion": "Person at an unguarded edge"
+        "suggestion": "At height, no guard rail"
       }
     ],
     "credit": {
