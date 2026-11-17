@@ -72,7 +72,7 @@ export const GROUPS: Group[] = [
     id: "water",
     name: "Water & weather",
     title: "Water where it shouldn't be.",
-    line: "Basements, stations, garages and roofs, watched between visits.",
+    line: "Garages, basements, stations and roofs, watched between visits.",
     tone: "dark",
   },
   {
@@ -301,6 +301,22 @@ export const SERVICES: Service[] = [
 
   // ── 04 Water & weather ──────────────────────────────────────────────────
   {
+    id: "garage-flood",
+    group: "water",
+    name: "Water in the parking garage",
+    short: "Garage water",
+    line: "Premium garages and valet parking: the first water on the floor sends an instant alert to everyone on the list, before it reaches the cars.",
+    watches: "Ramps, entrances, drains, low points and the bays with the most valuable cars, read against a fixed depth marker.",
+    alert: "water appears on the garage floor and starts to spread",
+    then: "The garage operator, security, the valet team and the car owners get the picture at the same moment, so cars are moved and pumps started before the water reaches the sills.",
+    buyers: "Premium and valet garages, luxury residences and hotels, car dealers, supercar storage.",
+    value: "A car that has stood in flood water is often written off. Minutes of warning mean cars moved, not replaced.",
+    senses: ["camera"],
+    options: ["sensor"],
+    photo: "garage-flood",
+    card: { meta: "Garage entrance · gate", title: "First water on the floor, spreading" },
+  },
+  {
     id: "basement-water",
     group: "water",
     name: "Water in the basement",
@@ -331,21 +347,6 @@ export const SERVICES: Service[] = [
     photo: "pump-stations",
     flagship: true,
     card: { meta: "Pump station 3 · pump 2", title: "Water on the floor, spreading" },
-  },
-  {
-    id: "garage-flood",
-    group: "water",
-    name: "Garages & underpasses",
-    short: "Garages & underpasses",
-    line: "Sees water coming down a garage ramp or collecting under a bridge, while there is still time to move the cars.",
-    watches: "Ramps, entrances, drains and low points, read against a fixed depth marker.",
-    alert: "water enters at the ramp, or rises 5 cm in 10 minutes at the lowest point",
-    then: "Screens and signs warn drivers, the operator is called and the barriers close.",
-    buyers: "Parking garage owners, shopping centers, housing associations, municipalities and road authorities.",
-    value: "Cars moved before the water arrives, and nobody driving into deep water.",
-    senses: ["camera", "sensor"],
-    photo: "garage-flood",
-    card: { meta: "Level −2 · ramp entrance", title: "Water coming in for 3 min" },
   },
   {
     id: "weather",

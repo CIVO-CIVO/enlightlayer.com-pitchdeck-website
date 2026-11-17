@@ -174,27 +174,28 @@
   },
   {
     "slug": "garage-flood",
-    "title": "File:Miami Beach garage tidal flooding with rain at high tide during king tides 19.jpg",
-    "page_url": "https://commons.wikimedia.org/wiki/File:Miami_Beach_garage_tidal_flooding_with_rain_at_high_tide_during_king_tides_19.jpg",
-    "file_url": "https://upload.wikimedia.org/wikipedia/commons/4/44/Miami_Beach_garage_tidal_flooding_with_rain_at_high_tide_during_king_tides_19.jpg",
+    "title": "File:Miami Beach October 11 2016 extra high tide 14.jpg",
+    "page_url": "https://commons.wikimedia.org/wiki/File:Miami_Beach_October_11_2016_extra_high_tide_14.jpg",
+    "file_url": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Miami_Beach_October_11_2016_extra_high_tide_14.jpg",
     "author": "B137",
     "license": "CC0 1.0 (public-domain dedication)",
     "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
-    "date_taken": "2016-10-15",
-    "retrieved": "2026-11-11",
+    "date_taken": "2016-10-11",
+    "retrieved": "2026-11-17",
     "original_size": [
       4928,
       3264
     ],
     "raw_size": [
-      4928,
-      3264
+      3840,
+      2543
     ],
     "alternates": [
-      "https://commons.wikimedia.org/wiki/File:Miami_Beach_massive_garage_flooding_16.jpg",
-      "https://commons.wikimedia.org/wiki/File:20130610040DR_Dresden-Laubegast_%C3%96sterreicher_Str_69_Flut.jpg"
+      "https://commons.wikimedia.org/wiki/File:Miami_Beach_garage_tidal_flooding_with_rain_at_high_tide_during_king_tides_19.jpg",
+      "https://commons.wikimedia.org/wiki/File:Miami_-.5_floor_carpark_at_threshold_of_tidal_flooding_1.jpg",
+      "https://commons.wikimedia.org/wiki/File:Miami_Beach_massive_garage_flooding_4.jpg"
     ],
-    "notes": "Licence verified on the file page ({{self|cc-zero}}, own work). Original downloaded. Low-light shot; right edge vignetting cropped; distant car's plate blurred."
+    "notes": "Same CC0 Miami Beach series as before (B137, own work). 3840 px rendition of the 4928 px original. Real tidal flooding: the first water runs in from the gate towards the parked cars. Plate of the nearest car blurred. No openly licensed photo of premium cars in a flooding garage was found on Commons or Openverse (2026-11-17)."
   },
   {
     "slug": "substations",

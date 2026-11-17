@@ -1649,26 +1649,26 @@ export const photos = {
     "src": "/img/photo/garage-flood.jpg",
     "thumb": "/img/thumb/garage-flood.jpg",
     "width": 2048,
-    "height": 1262,
-    "alt": "A dim parking garage after heavy rain: water spreads across the concrete floor and mirrors a ceiling light, with a parked car and pillars receding into the dark.",
-    "subject": "Water spreading across a parking-garage floor at night",
+    "height": 1401,
+    "alt": "A parking garage seen from a ceiling-height camera at night: the first water spreads in fingers across the concrete floor from the gate, with parked cars behind it.",
+    "subject": "First water spreading across a parking-garage floor at the gate, cars parked behind it",
     "tone": "dark",
-    "focal": [0.5, 0.6],
+    "focal": [0.55, 0.45],
     "quiet": ["top"],
     "rois": [
       {
         "key": "floor-water",
-        "box": [0.31982, 0.64025, 0.35986, 0.33994],
+        "box": [0.43457, 0.38972, 0.32617, 0.37901],
         "kind": "thermal",
         "overlay": "/img/ir/garage-flood--floor-water.webp",
-        "subject": "Water pooling on the garage floor below the light",
-        "suggestion": "Water spreading across the floor towards the parking bays"
+        "subject": "First water spreading across the floor in front of the gate",
+        "suggestion": "First water on the floor, spreading"
       }
     ],
     "credit": {
       "author": "B137",
       "source": "Wikimedia Commons",
-      "url": "https://commons.wikimedia.org/wiki/File:Miami_Beach_garage_tidal_flooding_with_rain_at_high_tide_during_king_tides_19.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Miami_Beach_October_11_2016_extra_high_tide_14.jpg",
       "license": "CC0 1.0",
       "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
     },
