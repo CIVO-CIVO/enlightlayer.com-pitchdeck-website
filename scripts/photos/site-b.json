@@ -1,0 +1,283 @@
+{
+  "photos": [
+    {
+      "slug": "site-gate",
+      "raw": "assets-src/raw/site-gate.jpg",
+      "crop": [
+        0.2,
+        0.12,
+        0.75,
+        0.705
+      ],
+      "alt": "The vehicle entrance of a new housing estate under construction: two grey site hoardings with red caps stand either side of a dirt site road, both black mesh gate leaves are swung wide open, and behind them two rows of brick houses stand in scaffolding with no one at the gate.",
+      "subject": "Site gate standing wide open with no one at the entrance",
+      "focal": [
+        0.5,
+        0.55
+      ],
+      "quiet": [
+        "bottom"
+      ],
+      "people": "non-identifiable",
+      "tags": [
+        "modern",
+        "exterior",
+        "construction",
+        "site-gate",
+        "hoarding",
+        "access",
+        "after-hours",
+        "housing",
+        "united-kingdom"
+      ],
+      "credit": {
+        "author": "M J Roscoe",
+        "source": "Wikimedia Commons (from geograph.org.uk)",
+        "url": "https://commons.wikimedia.org/wiki/File:Site_entrance_to_housing_estate_(geograph_6437511).jpg",
+        "license": "CC BY-SA 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/"
+      },
+      "rois": [
+        {
+          "key": "gate-open",
+          "kind": "thermal",
+          "subject": "Both leaves of the site gate swung open onto the site road",
+          "suggestion": "Site gate left open",
+          "box": [
+            0.2,
+            0.3,
+            0.62,
+            0.55
+          ],
+          "hot": [
+            [
+              0.5,
+              0.5,
+              1
+            ],
+            [
+              0.33,
+              0.5,
+              0.55
+            ],
+            [
+              0.67,
+              0.5,
+              0.55
+            ]
+          ],
+          "spread": [
+            0.42,
+            0.3
+          ],
+          "lum": 0.2,
+          "shape": "ellipse"
+        }
+      ],
+      "retouch": [
+        [
+          0.585,
+          0.44,
+          0.07,
+          0.04
+        ]
+      ],
+      "notes": "Site entrance to housing estate, geograph 6437511, photo by M J Roscoe \u00b7 taken 9 April 2020 \u00b7 daylight: no usable dusk or night shot of an open gate or an intruder was found \u00b7 lettering on a skip blurred"
+    },
+    {
+      "slug": "site-edge",
+      "raw": "assets-src/raw/site-edge.jpg",
+      "crop": [
+        0,
+        0.42,
+        0.675,
+        0.54
+      ],
+      "alt": "Seen through a mesh site fence: a man in a dark hooded top and work boots, without a helmet or high-visibility clothing, stands with his hands on his hips at the lip of a deep open excavation with no edge protection, while two workers in high-visibility clothing work down beside a pipe in the trench below.",
+      "subject": "Man standing at the unguarded lip of a deep excavation",
+      "focal": [
+        0.35,
+        0.45
+      ],
+      "quiet": [
+        "right"
+      ],
+      "people": "blurred",
+      "tags": [
+        "modern",
+        "exterior",
+        "construction",
+        "excavation",
+        "trench",
+        "open-edge",
+        "danger-zone",
+        "worker",
+        "ppe",
+        "united-kingdom"
+      ],
+      "credit": {
+        "author": "Neil Owen",
+        "source": "Wikimedia Commons (from geograph.org.uk)",
+        "url": "https://commons.wikimedia.org/wiki/File:Deeper_and_bigger_trenches_-_geograph.org.uk_-_7697617.jpg",
+        "license": "CC BY-SA 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/"
+      },
+      "rois": [
+        {
+          "key": "open-edge",
+          "kind": "thermal",
+          "subject": "Man at the open edge of the excavation, no barrier between him and the drop",
+          "suggestion": "Person at an unprotected edge",
+          "box": [
+            0.15,
+            0.06,
+            0.4,
+            0.8
+          ],
+          "hot": [
+            [
+              0.48,
+              0.36,
+              1
+            ],
+            [
+              0.55,
+              0.62,
+              0.65
+            ]
+          ],
+          "spread": [
+            0.32,
+            0.34
+          ],
+          "lum": -0.15,
+          "shape": "ellipse"
+        }
+      ],
+      "retouch": [
+        [
+          0.474,
+          0.46,
+          0.048,
+          0.075
+        ],
+        [
+          0.0,
+          0.0,
+          0.58,
+          0.05
+        ]
+      ],
+      "notes": "Deeper and bigger trenches, geograph 7697617, photo by Neil Owen \u00b7 taken 11 December 2023 \u00b7 the standing man is seen from behind \u00b7 the face of the worker in the trench and the brand lettering on brick packs blurred"
+    },
+    {
+      "slug": "site-ppe",
+      "raw": "assets-src/raw/site-ppe.jpg",
+      "crop": [
+        0.335,
+        0.52,
+        0.31,
+        0.3
+      ],
+      "alt": "Seen through the mesh fence of a building site in Austria: beside a concrete mixer truck at the rim of a sheet piled excavation, a man in a red T-shirt and shorts stands without a helmet or high-visibility vest next to an orange concrete skip, while down in the pit a worker in a yellow helmet works between the steel piles.",
+      "subject": "Man without a helmet beside the mixer truck while the crew below wear helmets",
+      "focal": [
+        0.5,
+        0.35
+      ],
+      "quiet": [
+        "left"
+      ],
+      "people": "blurred",
+      "tags": [
+        "modern",
+        "exterior",
+        "construction",
+        "excavation",
+        "ppe",
+        "no-helmet",
+        "worker",
+        "mixer-truck",
+        "austria"
+      ],
+      "credit": {
+        "author": "Christoph Waghubinger (Lewenstein)",
+        "source": "Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File:Neubau_AK-Bezirksstelle_Kirchdorf_1.jpg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "rois": [
+        {
+          "key": "no-helmet",
+          "kind": "thermal",
+          "subject": "Man in a red T-shirt with no helmet and no vest beside the mixer truck",
+          "suggestion": "No helmet in the work zone",
+          "box": [
+            0.37,
+            0.02,
+            0.26,
+            0.5
+          ],
+          "hot": [
+            [
+              0.48,
+              0.38,
+              1
+            ],
+            [
+              0.5,
+              0.6,
+              0.7
+            ]
+          ],
+          "spread": [
+            0.28,
+            0.32
+          ],
+          "lum": -0.35,
+          "shape": "ellipse"
+        }
+      ],
+      "retouch": [
+        [
+          0.468,
+          0.163,
+          0.05,
+          0.05
+        ],
+        [
+          0.552,
+          0.26,
+          0.058,
+          0.05
+        ],
+        [
+          0.095,
+          0.1,
+          0.145,
+          0.13
+        ],
+        [
+          0.735,
+          0.14,
+          0.06,
+          0.055
+        ],
+        [
+          0.64,
+          0.0,
+          0.07,
+          0.035
+        ],
+        [
+          0.585,
+          0.81,
+          0.065,
+          0.095
+        ]
+      ],
+      "notes": "Neubau AK-Bezirksstelle Kirchdorf 1, Kirchdorf an der Krems \u00b7 taken 27 June 2023 \u00b7 a face, the truck number plate, a contractor banner, passers-by beyond the fence and small lettering blurred"
+    }
+  ]
+}

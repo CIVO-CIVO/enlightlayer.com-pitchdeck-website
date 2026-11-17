@@ -8,8 +8,9 @@ import { Contact, Deploy, Market, Trust } from "@/components/slides/Closing";
 import { Ideas, MoreIdeas } from "@/components/slides/Ideas";
 import { Cover, Flagship, Problem, Solution } from "@/components/slides/Opening";
 import { Overview } from "@/components/slides/Overview";
+import { Site } from "@/components/slides/Site";
 import { Why } from "@/components/slides/Why";
-import { CONTACT, DEPLOY, FLAGSHIP, FOCUS, GROUPS, IDEAS, MORE_IDEAS, WHY } from "@/content/deck";
+import { CONTACT, DEPLOY, FLAGSHIP, FOCUS, GROUPS, IDEAS, MORE_IDEAS, SITE, WHY } from "@/content/deck";
 
 const PDF = "/enlight-layer-pitch.pdf";
 
@@ -26,12 +27,18 @@ const SLIDES: Entry[] = [
   { id: "services", label: FOCUS.kicker, tone: "paper-2", render: (n) => <Overview n={n} /> },
   { id: "old-equipment", label: FLAGSHIP.kicker, tone: "paper", render: (n) => <Flagship n={n} /> },
   // the first area continues "Where we start": same look, labelled 2/2
-  ...GROUPS.map((g, k): Entry => ({
-    id: g.id,
-    label: k === 0 ? FLAGSHIP.kicker : g.name,
-    tone: AREA_TONES[k],
-    render: (n) => <Area n={n} group={g} tone={AREA_TONES[k]} label={k === 0 ? `${FLAGSHIP.kicker} · 2/2 · ${g.name}` : undefined} />,
-  })),
+  // building sites follow Safety & HSE as its own slide, in the same tone
+  ...GROUPS.flatMap((g, k): Entry[] => [
+    {
+      id: g.id,
+      label: k === 0 ? FLAGSHIP.kicker : g.name,
+      tone: AREA_TONES[k],
+      render: (n) => <Area n={n} group={g} tone={AREA_TONES[k]} label={k === 0 ? `${FLAGSHIP.kicker} · 2/2 · ${g.name}` : undefined} />,
+    },
+    ...(g.id === "people"
+      ? [{ id: SITE.id, label: SITE.kicker, tone: AREA_TONES[k], render: (n: number) => <Site n={n} label={`Area ${String(k + 1).padStart(2, "0")} · ${g.name} · ${SITE.kicker}`} /> }]
+      : []),
+  ]),
   { id: "deployment", label: DEPLOY.kicker, tone: "dark", render: (n) => <Deploy n={n} /> },
   { id: "market", label: "Market", tone: "paper", render: (n) => <Market n={n} /> },
   { id: "trust", label: "Privacy and safety", tone: "dark", render: (n) => <Trust n={n} /> },

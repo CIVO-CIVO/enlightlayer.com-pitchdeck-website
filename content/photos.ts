@@ -1268,6 +1268,169 @@ export const photos = {
     "people": "none",
     "tags": ["modern", "interior", "warehouse", "logistics", "hse", "safety", "emergency-exit", "walkway", "pallets", "france"]
   },
+  "site-wide": {
+    "slug": "site-wide",
+    "src": "/img/photo/site-wide.jpg",
+    "thumb": "/img/thumb/site-wide.jpg",
+    "width": 2560,
+    "height": 1513,
+    "alt": "A deep city-centre building pit in Charleroi, Belgium, seen from the street above: a yellow tracked excavator and a blue excavator work the rubble ramp in the foreground, two more excavators dig along the sheet-pile wall, two tower cranes stand over the concrete frame of the new underground levels, and a crew in helmets and orange vests works on a large rebar mat on the pit floor.",
+    "subject": "Busy city-centre building pit with excavators, tower cranes and a rebar crew",
+    "tone": "mid",
+    "focal": [0.66, 0.6],
+    "quiet": ["top"],
+    "rois": [
+      {
+        "key": "person-in-reach",
+        "box": [0.66133, 0.67812, 0.1332, 0.20687],
+        "kind": "thermal",
+        "overlay": "/img/ir/site-wide--person-in-reach.webp",
+        "subject": "Two workers in helmets and orange vests at the edge of the rebar slab, right above a working excavator's bucket",
+        "suggestion": "Person inside the excavator's reach"
+      },
+      {
+        "key": "open-edge",
+        "box": [0.59688, 0.45142, 0.06953, 0.10311],
+        "kind": "thermal",
+        "overlay": "/img/ir/site-wide--open-edge.webp",
+        "subject": "Two workers on a ledge at the top of the pit wall, beside an unguarded drop",
+        "suggestion": "Person at an unguarded edge"
+      }
+    ],
+    "credit": {
+      "author": "Jmh2o",
+      "source": "Wikimedia Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:Charleroi_-_Banque_de_Charleroi_-_pendant_les_travaux_%22Rive-gauche%22.jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    "people": "non-identifiable",
+    "tags": ["modern", "exterior", "construction", "building-site", "excavator", "tower-crane", "workers", "ppe", "rebar", "cover", "banner", "belgium"]
+  },
+  "site-crane": {
+    "slug": "site-crane",
+    "src": "/img/photo/site-crane.jpg",
+    "thumb": "/img/thumb/site-crane.jpg",
+    "width": 2048,
+    "height": 1223,
+    "alt": "Concrete pour on the new northbound span of the Whittier Bridge in Amesbury, Massachusetts: two concrete buckets hang from the trolleys of a yellow gantry crane above the bridge deck, a worker in a hard hat and high-visibility vest walks right beneath the nearer bucket while two colleagues watch it from beside the pour, with a crawler crane and a concrete mixer behind under a dark sky.",
+    "subject": "Concrete buckets hanging over a bridge deck crew",
+    "tone": "mid",
+    "focal": [0.5, 0.6],
+    "quiet": ["bottom"],
+    "rois": [
+      {
+        "key": "under-load",
+        "box": [0.43018, 0.66885, 0.12012, 0.18152],
+        "kind": "thermal",
+        "overlay": "/img/ir/site-crane--under-load.webp",
+        "subject": "Worker in a hard hat and vest walking right beneath a suspended concrete bucket",
+        "suggestion": "Person under a suspended load"
+      }
+    ],
+    "credit": {
+      "author": "MassDOT (Massachusetts Department of Transportation)",
+      "source": "Wikimedia Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:Concrete_Pours_in_Amesbury_(16018088633).jpg",
+      "license": "Public domain (Massachusetts government work)",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/Template:PD-MAGov"
+    },
+    "people": "non-identifiable",
+    "tags": ["modern", "exterior", "construction", "bridge", "crane", "gantry-crane", "suspended-load", "concrete", "workers", "ppe", "usa"]
+  },
+  "site-gate": {
+    "slug": "site-gate",
+    "src": "/img/photo/site-gate.jpg",
+    "thumb": "/img/thumb/site-gate.jpg",
+    "width": 2048,
+    "height": 1283,
+    "alt": "The vehicle entrance of a new housing estate under construction: two grey site hoardings with red caps stand either side of a dirt site road, both black mesh gate leaves are swung wide open, and behind them two rows of brick houses stand in scaffolding with no one at the gate.",
+    "subject": "Site gate standing wide open with no one at the entrance",
+    "tone": "mid",
+    "focal": [0.5, 0.55],
+    "quiet": ["bottom"],
+    "rois": [
+      {
+        "key": "gate-open",
+        "box": [0.2002, 0.30008, 0.62012, 0.55027],
+        "kind": "thermal",
+        "overlay": "/img/ir/site-gate--gate-open.webp",
+        "subject": "Both leaves of the site gate swung open onto the site road",
+        "suggestion": "Site gate left open"
+      }
+    ],
+    "credit": {
+      "author": "M J Roscoe",
+      "source": "Wikimedia Commons (from geograph.org.uk)",
+      "url": "https://commons.wikimedia.org/wiki/File:Site_entrance_to_housing_estate_(geograph_6437511).jpg",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/"
+    },
+    "people": "non-identifiable",
+    "tags": ["modern", "exterior", "construction", "site-gate", "hoarding", "access", "after-hours", "housing", "united-kingdom"]
+  },
+  "site-edge": {
+    "slug": "site-edge",
+    "src": "/img/photo/site-edge.jpg",
+    "thumb": "/img/thumb/site-edge.jpg",
+    "width": 2048,
+    "height": 1229,
+    "alt": "Seen through a mesh site fence: a man in a dark hooded top and work boots, without a helmet or high-visibility clothing, stands with his hands on his hips at the lip of a deep open excavation with no edge protection, while two workers in high-visibility clothing work down beside a pipe in the trench below.",
+    "subject": "Man standing at the unguarded lip of a deep excavation",
+    "tone": "mid",
+    "focal": [0.35, 0.45],
+    "quiet": ["right"],
+    "rois": [
+      {
+        "key": "open-edge",
+        "box": [0.1499, 0.06021, 0.3999, 0.79984],
+        "kind": "thermal",
+        "overlay": "/img/ir/site-edge--open-edge.webp",
+        "subject": "Man at the open edge of the excavation, no barrier between him and the drop",
+        "suggestion": "Person at an unprotected edge"
+      }
+    ],
+    "credit": {
+      "author": "Neil Owen",
+      "source": "Wikimedia Commons (from geograph.org.uk)",
+      "url": "https://commons.wikimedia.org/wiki/File:Deeper_and_bigger_trenches_-_geograph.org.uk_-_7697617.jpg",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/"
+    },
+    "people": "blurred",
+    "tags": ["modern", "exterior", "construction", "excavation", "trench", "open-edge", "danger-zone", "worker", "ppe", "united-kingdom"]
+  },
+  "site-ppe": {
+    "slug": "site-ppe",
+    "src": "/img/photo/site-ppe.jpg",
+    "thumb": "/img/thumb/site-ppe.jpg",
+    "width": 1190,
+    "height": 744,
+    "alt": "Seen through the mesh fence of a building site in Austria: beside a concrete mixer truck at the rim of a sheet piled excavation, a man in a red T-shirt and shorts stands without a helmet or high-visibility vest next to an orange concrete skip, while down in the pit a worker in a yellow helmet works between the steel piles.",
+    "subject": "Man without a helmet beside the mixer truck while the crew below wear helmets",
+    "tone": "mid",
+    "focal": [0.5, 0.35],
+    "quiet": ["left"],
+    "rois": [
+      {
+        "key": "no-helmet",
+        "box": [0.36975, 0.02016, 0.25966, 0.5],
+        "kind": "thermal",
+        "overlay": "/img/ir/site-ppe--no-helmet.webp",
+        "subject": "Man in a red T-shirt with no helmet and no vest beside the mixer truck",
+        "suggestion": "No helmet in the work zone"
+      }
+    ],
+    "credit": {
+      "author": "Christoph Waghubinger (Lewenstein)",
+      "source": "Wikimedia Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:Neubau_AK-Bezirksstelle_Kirchdorf_1.jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    "people": "blurred",
+    "tags": ["modern", "exterior", "construction", "excavation", "ppe", "no-helmet", "worker", "mixer-truck", "austria"]
+  },
   "cover": {
     "slug": "cover",
     "src": "/img/photo/cover.jpg",

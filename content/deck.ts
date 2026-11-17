@@ -169,18 +169,19 @@ export const SERVICES: Service[] = [
   {
     id: "building-sites",
     group: "people",
-    name: "Building sites",
+    name: "Whole building sites",
     short: "Building sites",
-    line: "Checks helmets, vests and danger zones on the site all day, and sees the moment someone walks into a machine's reach.",
-    watches: "Marked zones, open edges and shafts, the swing radius of excavators and cranes, helmets and high-vis, barriers and fencing.",
-    alert: "someone without a helmet or vest enters a marked zone, or a person stands inside an excavator's swing radius",
-    then: "The site manager gets the picture at once; every deviation goes into the HSE log.",
-    buyers: "Construction companies, contractors and builders, from a single house to a large site.",
-    value: "Fewer near-misses, and HSE documentation the client and the inspector can see.",
+    line: "Every camera on the site in one view: helmets and vests, every machine's reach, the danger zones and who is on site, day and night.",
+    watches:
+      "The whole site, from cameras on the fence, the gates, the crane and the machines: helmets and high-vis, the swing radius of every excavator, people under crane loads, open edges, shafts and excavations, trucks reversing where people walk, and anyone on site who shouldn't be.",
+    alert: "someone without a helmet or vest enters a marked zone, a person stands inside an excavator's swing radius or under a crane load, an open edge has no barrier, or someone is on site after hours",
+    then: "The site manager gets the picture and the camera at once; every deviation lands in one HSE log for the whole site.",
+    buyers: "Contractors and construction companies running large sites, and the developers, clients and insurers who want proof of safe work.",
+    value: "Fewer near-misses and accidents, one safety picture of the whole site, and HSE records the client and the inspector can see.",
     senses: ["camera"],
-    photo: "building-site",
+    photo: "site-wide",
     note: "Detects situations, not identities. No face recognition.",
-    card: { meta: "Street works · mini digger", title: "Person inside the digger's reach" },
+    card: { meta: "Pit floor · excavator 4", title: "People inside the excavator's reach" },
   },
   {
     id: "falls",
@@ -605,11 +606,52 @@ export const COVER = {
   title: "Enlight Layer",
   tagline: "Custom AI monitoring on cameras and sensors, for the places nobody watches.",
   markets: "Europe · North America",
-  photo: "building-site",
-  mirror: true,
-  /** the card goes right of the worker, clear of the title */
-  side: "right" as const,
-  card: { meta: "Street works · mini digger", title: "Person inside the digger's reach" },
+  /** the banner line above the title */
+  eyebrow: "For small and medium businesses · Europe & North America",
+  /** the strip along the bottom of the cover */
+  proof: [
+    { title: "Existing cameras first", text: "An ordinary camera and a phone. New hardware only where it's needed." },
+    { title: "Custom-built", text: "One model per problem, trained for the site it watches." },
+    { title: "Europe & North America", text: "Small and medium businesses first." },
+    { title: "An alert with the picture", text: "The right person gets the picture, not a video wall." },
+  ],
+  /** the banner cycles through these scenarios: one service each (place = callout above or below the problem) */
+  reel: [
+    { service: "building-sites", photo: "site-wide", zoom: 1.6, at: [0.6, 0.58], cam: "CAM 01", clock: "07:42:19", label: "Whole building sites · site overview" },
+    { service: "basement-water", photo: "basement-water", cam: "CAM 04", clock: "02:14:07", label: "Water in the basement · laundry room" },
+    { service: "robot-cells", photo: "robot-cells", cam: "CAM 06", clock: "10:12:40", label: "Robot & welding cells · weld cell 3" },
+    { service: "marinas", photo: "marinas", cam: "CAM 09", clock: "01:32:05", label: "Water after dark · marina" },
+    {
+      service: "predators",
+      photo: "predator-watch",
+      cam: "CAM 05",
+      clock: "05:48:12",
+      place: "below",
+      card: { meta: "North pasture · forest edge", title: "Lynx near the flock" },
+      label: "Predator warning · north pasture",
+    },
+    {
+      service: "site-materials",
+      photo: "night-yard",
+      cam: "CAM 07",
+      clock: "02:40:33",
+      card: { meta: "Street works · 02:40", title: "Tools and cable left out overnight" },
+      label: "Copper, cables & tools · street works",
+    },
+  ] as {
+    service: string;
+    photo: string;
+    mirror?: boolean;
+    place?: "above" | "below";
+    /** crop tighter around the problem than a plain cover */
+    zoom?: number;
+    /** where in the frame the problem sits (fractions), when the photograph has it too low or too high */
+    at?: readonly [number, number];
+    cam: string;
+    clock: string;
+    label: string;
+    card?: { meta: string; title: string };
+  }[],
 };
 
 export const PROBLEM = {
@@ -781,6 +823,37 @@ export const FLAGSHIP = {
   footnote: "Our estimate for a typical retrofit. Every site is quoted individually.",
   photo: "boiler-gauges",
   card: { meta: "Plant room · read every minute", title: "Supply 58 °C, normal", kind: "reading" as const },
+};
+
+/** Building sites as one operation: the slide after Safety & HSE */
+export const SITE = {
+  id: "building-sites",
+  kicker: "Building sites",
+  title: "The whole building site, in one view.",
+  text: "Cameras on the fence, the gates, the crane and the machines feed one view of the site, day and night.",
+  checks: [
+    { title: "Helmets & high-vis", text: "Anyone without them in a marked zone." },
+    { title: "Machine reach", text: "People in an excavator's swing radius or under a crane load." },
+    { title: "Danger zones", text: "Open edges, shafts and pits without a barrier." },
+    { title: "People who shouldn't be there", text: "After hours, through the fence or in a closed zone." },
+    { title: "Trucks & walkways", text: "People on foot where trucks reverse." },
+    { title: "One HSE log", text: "Every deviation with its picture, for the site manager." },
+  ],
+  overview: { slug: "site-wide", cam: "CAM 01 · Site overview", tags: ["In the excavator's reach", "At an unguarded edge"] },
+  feeds: [
+    { slug: "site-crane", cam: "CAM 02 · Crane", alert: "Person under the load" },
+    { slug: "site-ppe", cam: "CAM 03 · Pit north", alert: "No helmet in the zone" },
+    { slug: "site-edge", cam: "CAM 04 · Trench 2", alert: "No PPE at an open edge" },
+    { slug: "site-gate", cam: "CAM 05 · Gate 1", alert: "Site gate left open" },
+  ],
+  logLabel: "Example log",
+  log: [
+    { time: "07:42", text: "In the excavator's reach, pit floor" },
+    { time: "09:15", text: "No helmet, pit north" },
+    { time: "13:02", text: "Under the load, crane" },
+    { time: "18:10", text: "Gate left open, gate 1" },
+  ],
+  note: "Example scenes. Detects situations, not identities. No face recognition.",
 };
 
 export const DEPLOY = {

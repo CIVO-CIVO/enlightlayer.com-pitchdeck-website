@@ -1,64 +1,76 @@
-import { ArrowDown } from "lucide-react";
+import type { LucideIcon } from "lucide-react";
+import { ArrowDown, BellRing, Camera, Globe, Wrench } from "lucide-react";
 import { COVER, FLAGSHIP, PROBLEM, SOLUTION } from "@/content/deck";
 import { cx } from "@/lib/cx";
+import { ReelBar, ReelPhotos, ReelProvider } from "../CoverReel";
 import { Scene } from "../Scene";
 import { Slide } from "../Slide";
 import { Stack } from "../Stack";
 
 const pad = (n: number) => String(n).padStart(2, "0");
 
-/* ── 01 · Cover ──────────────────────────────────────────────────────────── */
+/* ── 01 · Cover: the banner reel on the right, the title on the left, the proof strip below ── */
+const PROOF_ICON: LucideIcon[] = [Camera, Wrench, Globe, BellRing];
+
 export function Cover({ n }: { n: number }) {
   return (
-    <Slide
-      id="cover"
-      n={n}
-      label="Pitch deck"
-      tone="dark"
-      backdrop={
-        <Scene
-          slug={COVER.photo}
-          mirror={COVER.mirror}
-          side={COVER.side}
-          card={COVER.card}
-          eager
-          label={null}
-          sizes="100vw"
-          className="!absolute inset-0 -z-10 h-full w-full"
-          shade="linear-gradient(90deg, rgba(18,18,17,.9) 0%, rgba(18,18,17,.7) 30%, rgba(18,18,17,.12) 58%, rgba(18,18,17,0) 76%), linear-gradient(0deg, rgba(18,18,17,.8) 0%, rgba(18,18,17,0) 42%)"
-        />
-      }
-    >
-      <div className="mt-auto max-w-[min(100%,46rem)] pt-[24vh] lg:pt-0">
-        <h1 className="t-cover">
-          <span className="mask-line">
-            <span>Enlight</span>
-          </span>
-          <span className="mask-line">
-            <span style={{ "--d": 1 } as React.CSSProperties}>Layer</span>
-          </span>
-        </h1>
-        <p className="t-lead rise mt-6 max-w-[34rem] text-white/80" style={{ "--d": 4 } as React.CSSProperties}>
-          {COVER.tagline}
-        </p>
-        <div className="rise mt-8 flex flex-wrap items-center gap-3" style={{ "--d": 6 } as React.CSSProperties}>
-          <a href="#solution" className="inline-flex h-11 items-center gap-2 rounded-full bg-white px-5 text-[14.5px] font-semibold text-ink hover:bg-white/90">
-            Start the deck
-            <ArrowDown className="h-4 w-4" strokeWidth={2} aria-hidden />
-          </a>
-          <a
-            href="#services"
-            className="inline-flex h-11 items-center rounded-full border border-white/30 px-5 text-[14.5px] font-medium text-white hover:bg-white/10"
-          >
-            Jump to the services
-          </a>
+    <ReelProvider>
+      <Slide id="cover" n={n} label="Pitch deck" tone="dark" backdrop={<ReelPhotos />}>
+        <div className="cover-copy flex flex-1 flex-col justify-center pb-6 lg:pt-[clamp(8px,2vh,24px)] lg:pb-[clamp(14px,3vh,32px)]">
+          <ReelBar className="mb-6 lg:hidden" />
+          <div className="max-w-[min(100%,40rem)]">
+            <p className="t-label rise flex items-center gap-3 text-white/70">
+              <span>{COVER.eyebrow}</span>
+              <span aria-hidden className="hidden h-px w-10 flex-none bg-white/40 sm:block" />
+            </p>
+            <h1 className="t-cover mt-[clamp(14px,2.6vh,28px)] !text-[clamp(3rem,min(7.4vw,13vh),8.25rem)]">
+              <span className="mask-line">
+                <span>Enlight</span>
+              </span>
+              <span className="mask-line">
+                <span style={{ "--d": 1 } as React.CSSProperties}>Layer</span>
+              </span>
+            </h1>
+            <p className="t-lead rise mt-[clamp(14px,2.6vh,24px)] max-w-[32rem] text-white/80" style={{ "--d": 4 } as React.CSSProperties}>
+              {COVER.tagline}
+            </p>
+            <div className="rise mt-[clamp(18px,3.4vh,32px)] flex flex-wrap items-center gap-3" style={{ "--d": 6 } as React.CSSProperties}>
+              <a href="#solution" className="inline-flex h-11 items-center gap-2 rounded-full bg-white px-5 text-[14.5px] font-semibold text-ink hover:bg-white/90">
+                Start the deck
+                <ArrowDown className="h-4 w-4" strokeWidth={2} aria-hidden />
+              </a>
+              <a
+                href="#services"
+                className="inline-flex h-11 items-center rounded-full border border-white/30 px-5 text-[14.5px] font-medium text-white hover:bg-white/10"
+              >
+                Jump to the services
+              </a>
+            </div>
+            <p className="t-label rise mt-[clamp(14px,2.6vh,24px)] hidden text-white/40 lg:block" style={{ "--d": 8 } as React.CSSProperties}>
+              ← → or Space to move · F to present
+            </p>
+          </div>
         </div>
-        <p className="t-label rise mt-10 flex flex-wrap gap-x-6 gap-y-2 text-white/50" style={{ "--d": 8 } as React.CSSProperties}>
-          <span>{COVER.markets}</span>
-          <span className="hidden lg:inline">← → or Space to move · F to present</span>
-        </p>
-      </div>
-    </Slide>
+
+        <ReelBar className="mb-3 hidden lg:ml-[40%] lg:flex" />
+        <ul className="rise grid grid-cols-2 gap-px overflow-hidden rounded-[10px] border border-white/12 bg-white/10 lg:grid-cols-4" style={{ "--d": 9 } as React.CSSProperties}>
+          {COVER.proof.map((p, k) => {
+            const Icon = PROOF_ICON[k];
+            return (
+              <li key={p.title} className="flex items-start gap-3 bg-[#141413]/90 px-3.5 py-3 backdrop-blur-sm max-sm:flex-col max-sm:gap-2.5 sm:gap-3.5 sm:px-4 sm:py-[clamp(12px,2vh,18px)] lg:px-5">
+                <span className="flex h-8 w-8 flex-none items-center justify-center rounded-[6px] border border-white/15 bg-white/5 sm:h-9 sm:w-9">
+                  <Icon className="h-[18px] w-[18px] text-white" strokeWidth={1.8} aria-hidden />
+                </span>
+                <span className="min-w-0">
+                  <span className="block text-[15px] leading-tight font-semibold tracking-[-0.015em] 2xl:text-[16.5px]">{p.title}</span>
+                  <span className="mt-1 hidden text-[13px] leading-snug text-white/60 sm:block 2xl:text-[14px]">{p.text}</span>
+                </span>
+              </li>
+            );
+          })}
+        </ul>
+      </Slide>
+    </ReelProvider>
   );
 }
 

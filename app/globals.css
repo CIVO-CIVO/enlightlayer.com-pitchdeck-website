@@ -196,10 +196,15 @@ html[data-present][data-idle] .deck-header {
   background: #0d0d0c;
 }
 .scene > * {
-  --iw: max(100cqw, calc(100cqh * var(--ar)));
+  --iw: calc(max(100cqw, calc(100cqh * var(--ar))) * var(--z, 1));
   --ih: calc(var(--iw) / var(--ar));
   --il: calc((100cqw - var(--iw)) * var(--fx));
   --it: calc((100cqh - var(--ih)) * var(--fy));
+}
+/* `at`: the focus object sits at (--px, --py) of the frame, as far as the photograph still covers it */
+.scene[data-at] > * {
+  --il: clamp(calc(100cqw - var(--iw)), calc(100cqw * var(--px) - var(--iw) * var(--fx)), 0px);
+  --it: clamp(calc(100cqh - var(--ih)), calc(100cqh * var(--py) - var(--ih) * var(--fy)), 0px);
 }
 .scene-inner {
   position: absolute;
@@ -241,6 +246,84 @@ html[data-present][data-idle] .deck-header {
 }
 .scene-card {
   top: clamp(12px, calc(var(--it) + var(--ih) * var(--ay) - 1.6rem), calc(100cqh - 5.4rem));
+}
+/* Callout variant (the banner): the card above or below the focus object, centred on it and
+   joined by a leader line to a dot on the brackets. */
+.scene-callout {
+  --cw: min(18rem, 62cqw);
+  --lead: clamp(24px, 5.5cqh, 50px);
+  position: absolute;
+  z-index: 3;
+  width: var(--cw);
+  left: clamp(12px, calc(var(--il) + var(--iw) * var(--cx) - var(--cw) / 2), calc(100cqw - var(--cw) - 12px));
+}
+.scene-callout[data-place="above"] {
+  top: calc(var(--it) + var(--ih) * var(--bt) - var(--lead));
+  translate: 0 -100%;
+}
+.scene-callout[data-place="below"] {
+  top: calc(var(--it) + var(--ih) * var(--bb) + var(--lead));
+}
+.scene-lead {
+  --lead: clamp(24px, 5.5cqh, 50px);
+  position: absolute;
+  z-index: 3;
+  left: calc(var(--il) + var(--iw) * var(--cx) - 0.5px);
+  width: 1px;
+  height: var(--lead);
+  background: rgba(255, 255, 255, 0.75);
+}
+.scene-lead[data-place="above"] {
+  top: calc(var(--it) + var(--ih) * var(--bt) - var(--lead));
+  transform-origin: bottom;
+}
+.scene-lead[data-place="below"] {
+  top: calc(var(--it) + var(--ih) * var(--bb));
+  transform-origin: top;
+}
+.scene-lead::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  width: 9px;
+  height: 9px;
+  margin-left: -4.5px;
+  border: 1.5px solid #fff;
+  border-radius: 50%;
+  background: #121211;
+}
+.scene-lead[data-place="above"]::after {
+  bottom: -4.5px;
+}
+.scene-lead[data-place="below"]::after {
+  top: -4.5px;
+}
+/* Tag variant (the site overview camera): one small label on each marked situation */
+.scene-tag {
+  position: absolute;
+  z-index: 3;
+  left: clamp(6px, calc(var(--il) + var(--iw) * var(--tx)), calc(100cqw - 11rem));
+  top: max(30px, calc(var(--it) + var(--ih) * var(--ty) - 5px));
+  translate: 0 -100%;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 3px 7px;
+  border-radius: 4px;
+  background: rgba(10, 10, 9, 0.8);
+  color: #fff;
+  font-size: 11px;
+  line-height: 1.25;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.scene-tag::before {
+  content: "";
+  flex: none;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--color-orange);
 }
 @container (max-width: 420px) {
   .scene-card {
@@ -331,6 +414,114 @@ html[data-present][data-idle] .deck-header {
   }
   [data-seen] .fade-in {
     opacity: 1;
+  }
+}
+
+/* ───────────────────────── Cover reel ─────────────────────────
+   The cover in the Enlightdata style (components/CoverReel.tsx): the scenes run on the right
+   64% of the slide (the top of it on phones) and melt into the canvas behind the title. A new
+   scene fades in over the last, the photograph drifts toward the problem, the brackets lock on,
+   the leader line grows and the callout rises. The infrared is part of the still photograph:
+   it never animates on its own. */
+.cover-frame {
+  inset: 0 0 auto 0;
+  height: var(--cover-photo-h);
+  --cover-shade: linear-gradient(180deg, rgba(18, 18, 17, 0.8) 0%, rgba(18, 18, 17, 0) 24%),
+    linear-gradient(0deg, #121211 0%, rgba(18, 18, 17, 0.55) 14%, rgba(18, 18, 17, 0) 34%);
+}
+#cover {
+  --cover-photo-h: clamp(340px, 62svh, 600px);
+}
+.cover-hud {
+  inset: calc(var(--hdr) + 46px) 12px 12% 12px;
+}
+.cover-copy {
+  padding-top: calc(var(--cover-photo-h) - var(--hdr) - 4.5rem);
+}
+@media (min-width: 1024px) {
+  .cover-frame {
+    inset: 0 0 0 auto;
+    width: 64%;
+    height: auto;
+    --cover-shade: linear-gradient(90deg, #121211 0%, rgba(18, 18, 17, 0.8) 7%, rgba(18, 18, 17, 0.28) 20%, rgba(18, 18, 17, 0) 34%),
+      linear-gradient(180deg, rgba(18, 18, 17, 0.85) 0%, rgba(18, 18, 17, 0) 17%),
+      linear-gradient(0deg, rgba(18, 18, 17, 0.94) 0%, rgba(18, 18, 17, 0.55) 16%, rgba(18, 18, 17, 0) 34%);
+  }
+  .cover-hud {
+    inset: calc(var(--hdr) + 14px) 14px var(--cover-hud-b, 176px) 22%;
+  }
+  .cover-copy {
+    padding-top: 0;
+  }
+}
+.reel-item {
+  opacity: 0;
+  z-index: 0;
+}
+.reel-item[data-prev] {
+  opacity: 1;
+  z-index: 1;
+}
+.reel-item[data-on] {
+  opacity: 1;
+  z-index: 2;
+}
+.reel-fill {
+  animation-name: reel-fill;
+  animation-timing-function: linear;
+  animation-fill-mode: both;
+}
+@keyframes reel-fill {
+  from {
+    transform: scaleX(0);
+  }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .reel-item[data-on] {
+    animation: reel-in 1.4s var(--ease-precise) both;
+  }
+  .reel:not([data-still]) .reel-item:is([data-on], [data-prev]) .scene-inner {
+    transform-origin: calc(var(--fx) * 100%) calc(var(--fy) * 100%);
+    animation: reel-push 10s linear both;
+  }
+  .reel-item:is([data-on], [data-prev]) .scene-brackets {
+    animation: reel-lock 0.7s var(--ease-settle) 0.55s both;
+  }
+  .reel-item:is([data-on], [data-prev]) .scene-lead {
+    animation: reel-lead 0.5s var(--ease-settle) 1s both;
+  }
+  .reel-item:is([data-on], [data-prev]) .scene-callout {
+    animation: reel-card 0.8s var(--ease-settle) 1.3s both;
+  }
+  .reel-label {
+    animation: reel-in 0.6s var(--ease-precise) both;
+  }
+}
+@keyframes reel-in {
+  from {
+    opacity: 0;
+  }
+}
+@keyframes reel-push {
+  to {
+    transform: scale(1.06);
+  }
+}
+@keyframes reel-lock {
+  from {
+    opacity: 0;
+    transform: scale(1.4);
+  }
+}
+@keyframes reel-lead {
+  from {
+    scale: 1 0;
+  }
+}
+@keyframes reel-card {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
   }
 }
 
@@ -435,9 +626,11 @@ html[data-present][data-idle] .deck-header {
   }
 }
 
-/* phones: the cover's alert card would cover the title */
+/* phones: the cover's alert card would cover the title; the banner's callout moves into the scenario bar */
 @media (max-width: 639px) {
-  #cover .scene-card {
+  #cover .scene-card,
+  #cover .scene-callout,
+  #cover .scene-lead {
     display: none;
   }
 }
