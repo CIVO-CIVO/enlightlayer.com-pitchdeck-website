@@ -1,8 +1,10 @@
-import { Inter, JetBrains_Mono } from "next/font/google";
+import { Inter, Inter_Tight, JetBrains_Mono } from "next/font/google";
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter", axes: ["opsz"], display: "swap" });
+// the wordmark, set like Enlightdata.ai's
+const interTight = Inter_Tight({ subsets: ["latin"], variable: "--font-inter-tight", weight: ["600"], display: "swap" });
 const mono = JetBrains_Mono({ subsets: ["latin"], variable: "--font-jb-mono", display: "swap" });
 
 const site = process.env.VERCEL_PROJECT_PRODUCTION_URL ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}` : "http://localhost:3200";
@@ -26,7 +28,7 @@ export const viewport: Viewport = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${inter.variable} ${mono.variable}`}>
+    <html lang="en" className={`${inter.variable} ${interTight.variable} ${mono.variable}`}>
       <head>
         <noscript>
           <style>{`.rise,.fade-in{opacity:1!important;transform:none!important}.mask-line>span,.grow-x{transform:none!important}`}</style>
